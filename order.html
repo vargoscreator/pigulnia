@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Оформлення замовлення</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header__catalog">
+                    <button class="header__catalog-btn btn">Каталог</button>
+                    <div class="header__catalog-content">
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/1.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Жіноче <br>здоров'я</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/2.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Нервова <br>система</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/3.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Сечостатева <br>система</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/4.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Чоловіче <br>здоров'я</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/5.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Ендокрина <br>система</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/6.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Вітаміни та<br> мінерали</span>
+                        </a>
+                        <a class="header__catalog-item" href="#">
+                            <div class="header__catalog-image">
+                                <img src="img/catalog/7.png" alt="">
+                            </div>
+                            <span class="header__catalog-descr">Комплекси</span>
+                        </a>
+                    </div>
+                </div>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a href="about.html">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="partners.html">Партнери</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультація фахівця</a>
+                        </li>
+                        <li>
+                            <a href="#">Споживачу</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__end">
+                    <a class="header__end-tel" href="tel:+380931233122">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M15.8557 13.1485C15.2974 12.586 13.9453 11.7651 13.2893 11.4343C12.435 11.004 12.3647 10.9688 11.6932 11.4677C11.2453 11.8006 10.9475 12.098 10.4233 11.9862C9.89915 11.8745 8.76008 11.2441 7.7627 10.2499C6.76532 9.25566 6.0984 8.08355 5.98626 7.56113C5.87411 7.03871 6.17645 6.74445 6.50622 6.29551C6.97098 5.66269 6.93583 5.55723 6.53856 4.70293C6.22883 4.03848 5.38403 2.69902 4.81942 2.14355C4.21544 1.54695 4.21544 1.65242 3.82626 1.81414C3.50942 1.94745 3.20545 2.10949 2.91817 2.29824C2.35567 2.67195 2.04348 2.98238 1.82516 3.4489C1.60684 3.91543 1.50876 5.00914 2.63622 7.05734C3.76368 9.10554 4.55469 10.1529 6.19192 11.7855C7.82915 13.4182 9.08809 14.296 10.9285 15.3282C13.2052 16.6033 14.0785 16.3548 14.5465 16.1368C15.0144 15.9188 15.3262 15.6095 15.7006 15.047C15.8899 14.7602 16.0523 14.4565 16.1858 14.1399C16.3479 13.7521 16.4533 13.7521 15.8557 13.1485Z" stroke="#1F1F1F" stroke-miterlimit="10"/>
+                        </svg>
+                        +38 (093) 12 33 122
+                    </a>
+                    <div class="header__end-block">
+                        <button class="header__end-btn" id="serach-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <g clip-path="url(#clip0_1_4929)">
+                                  <path d="M2.04765 12.1542C2.44355 13.0857 3.01906 13.9302 3.74131 14.6393C4.46357 15.3485 5.31843 15.9084 6.25709 16.2872C7.19575 16.6659 8.19982 16.8561 9.21198 16.8468C10.2241 16.8376 11.2245 16.629 12.1561 16.2331C13.0877 15.8372 13.9321 15.2617 14.6413 14.5395C15.3504 13.8172 15.9104 12.9623 16.2891 12.0237C16.6679 11.085 16.8581 10.0809 16.8488 9.06879C16.8395 8.05663 16.631 7.05621 16.2351 6.12466C15.8392 5.19309 15.2636 4.34863 14.5414 3.63949C13.8191 2.93034 12.9643 2.3704 12.0256 1.99163C11.0869 1.61287 10.0829 1.42269 9.07072 1.43196C8.05857 1.44124 7.05815 1.64978 6.12659 2.04568C5.19503 2.44159 4.35057 3.0171 3.64143 3.73936C2.93228 4.46162 2.37234 5.31648 1.99358 6.25514C1.61481 7.1938 1.42464 8.19787 1.43392 9.21003C1.44319 10.2222 1.65174 11.2226 2.04765 12.1542Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M14.5898 14.5889L20.5677 20.5676" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1_4929">
+                                    <rect width="22" height="22" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                        
+                        <div class="header__end-user">
+                            <button class="header__user-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <path d="M6.51563 5.875C6.51562 6.4639 6.63162 7.04703 6.85698 7.5911C7.08234 8.13517 7.41266 8.62952 7.82907 9.04593C8.24548 9.46234 8.73983 9.79266 9.2839 10.018C9.82797 10.2434 10.4111 10.3594 11 10.3594C11.5889 10.3594 12.172 10.2434 12.7161 10.018C13.2602 9.79266 13.7545 9.46234 14.1709 9.04593C14.5873 8.62952 14.9177 8.13517 15.143 7.5911C15.3684 7.04703 15.4844 6.4639 15.4844 5.875C15.4844 5.2861 15.3684 4.70297 15.143 4.1589C14.9177 3.61483 14.5873 3.12048 14.1709 2.70407C13.7545 2.28766 13.2602 1.95734 12.7161 1.73198C12.172 1.50662 11.5889 1.39063 11 1.39062C10.4111 1.39063 9.82797 1.50662 9.2839 1.73198C8.73983 1.95734 8.24548 2.28766 7.82907 2.70407C7.41266 3.12048 7.08234 3.61483 6.85698 4.1589C6.63162 4.70297 6.51562 5.2861 6.51563 5.875Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.67188 20.6094C2.67188 18.4006 3.5493 16.2823 5.11113 14.7205C6.67295 13.1587 8.79124 12.2813 11 12.2812C13.2088 12.2813 15.327 13.1587 16.8889 14.7205C18.4507 16.2823 19.3281 18.4006 19.3281 20.6094" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="header__user-content">
+                                <button class="header__user-open" id="login-client"><span></span>Вхід для клієнтів</button>
+                                <button class="header__user-open" id="login-doctor"><span></span>Вхід для лікарів</button>
+                            </div>
+                        </div>
+                        
+                        <button class="header__end-btn" id="basket-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M19.61 18.8926C19.6331 19.098 19.6123 19.3059 19.5492 19.5029C19.4861 19.6997 19.3821 19.881 19.2439 20.0347C19.1054 20.1882 18.9358 20.3107 18.7466 20.3939C18.5573 20.4772 18.3525 20.5195 18.1457 20.5179H3.85428C3.64748 20.5195 3.4427 20.4772 3.25341 20.3939C3.06413 20.3107 2.89462 20.1882 2.75607 20.0347C2.61789 19.881 2.51383 19.6997 2.45074 19.5029C2.38764 19.3059 2.36694 19.098 2.39 18.8926L3.67857 7.33936H18.3214L19.61 18.8926Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.33984 7.33932V5.14289C7.33984 4.17201 7.72552 3.24089 8.41204 2.55437C9.09855 1.86786 10.0297 1.48218 11.0006 1.48218C11.9714 1.48218 12.9026 1.86786 13.5891 2.55437C14.2756 3.24089 14.6613 4.17201 14.6613 5.14289V7.33932" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <button class="header__burger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M11.9173 4.8125C11.5376 4.8125 11.2298 5.1203 11.2298 5.5C11.2298 5.8797 11.5376 6.1875 11.9173 6.1875L17.4173 6.1875C17.797 6.1875 18.1048 5.8797 18.1048 5.5C18.1048 5.1203 17.797 4.8125 17.4173 4.8125H11.9173Z" fill="#1F1F1F"/>
+                                <path d="M4.58398 10.3125C4.20429 10.3125 3.89648 10.6203 3.89648 11C3.89648 11.3797 4.20429 11.6875 4.58398 11.6875H17.4173C17.797 11.6875 18.1048 11.3797 18.1048 11C18.1048 10.6203 17.797 10.3125 17.4173 10.3125H4.58398Z" fill="#1F1F1F"/>
+                                <path d="M8.25065 15.8125C7.87096 15.8125 7.56315 16.1203 7.56315 16.5C7.56315 16.8797 7.87095 17.1875 8.25065 17.1875L17.4173 17.1875C17.797 17.1875 18.1048 16.8797 18.1048 16.5C18.1048 16.1203 17.797 15.8125 17.4173 15.8125L8.25065 15.8125Z" fill="#1F1F1F"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M17.9035 5.06939C18.172 4.8009 18.172 4.3656 17.9035 4.09712C17.635 3.82863 17.1997 3.82863 16.9312 4.09712L11.0007 10.0277L5.07012 4.09712C4.80163 3.82863 4.36633 3.82863 4.09785 4.09712C3.82936 4.3656 3.82936 4.80091 4.09785 5.06939L10.0284 10.9999L4.09787 16.9305C3.82939 17.1989 3.82939 17.6342 4.09787 17.9027C4.36636 18.1712 4.80166 18.1712 5.07015 17.9027L11.0007 11.9722L16.9312 17.9027C17.1997 18.1712 17.635 18.1712 17.9035 17.9027C18.1719 17.6342 18.1719 17.1989 17.9035 16.9305L11.9729 10.9999L17.9035 5.06939Z" fill="#1F1F1F"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__inner">
+                    <ul class="breadcrumbs__navigation">
+                        <li>
+                            <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                            <a class="active" href="order.html">Оформлення замовлення</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="order">
+            <div class="container">
+                <div class="order__inner">
+                    <div class="order__top">
+                        <h1 class="order__title title-2">Оформлення замовлення</h1>
+                        <a class="order__link link" href="#">
+                            Повернутись до покупок
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                                <path d="M1.5 8.5L8.5 1.5M8.5 1.5H2.8125M8.5 1.5V7.1875" stroke="#245435" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="order__click">
+                        <div class="order__click-content">
+                            <div class="order__click-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 3.10415C10.2836 3.10415 7.27083 6.1169 7.27083 9.83331C7.27083 13.5497 10.2836 16.5625 14 16.5625C17.7164 16.5625 20.7292 13.5497 20.7292 9.83331C20.7292 6.1169 17.7164 3.10415 14 3.10415ZM9.39583 9.83331C9.39583 7.2905 11.4572 5.22915 14 5.22915C16.5428 5.22915 18.6042 7.2905 18.6042 9.83331C18.6042 12.3761 16.5428 14.4375 14 14.4375C11.4572 14.4375 9.39583 12.3761 9.39583 9.83331Z" fill="#245435"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1857 0.383079C18.8889 0.2708 17.272 0.270806 15.2096 0.270813H12.7904C10.728 0.270806 9.11112 0.2708 7.8143 0.383079C6.49333 0.497448 5.40537 0.734327 4.42945 1.26722C3.05887 2.01561 1.9323 3.14219 1.18391 4.51276C0.651014 5.48868 0.414135 6.57664 0.299766 7.89761C0.187487 9.19443 0.187493 10.8113 0.1875 12.8737V17.3423C0.1875 17.4252 0.1875 17.4757 0.187975 17.5197C0.21844 20.3425 1.68366 22.8193 3.88456 24.2564C5.141 25.0768 6.63866 25.5598 8.24543 25.5772C8.2894 25.5776 8.33982 25.5776 8.4225 25.5776L8.43916 25.5776L8.4409 25.5776C8.53582 25.5782 8.62655 25.6168 8.69276 25.6848L8.6939 25.686L9.20394 26.2159C10.1185 27.1661 10.8797 27.9571 11.567 28.5004C12.2915 29.0731 13.0615 29.4767 14 29.4767C14.9385 29.4767 15.7085 29.0731 16.433 28.5004C17.1203 27.9571 17.8815 27.1662 18.796 26.216L19.3072 25.6848C19.3734 25.6168 19.4642 25.5782 19.5591 25.5776L19.5608 25.5776L19.5775 25.5776C19.6602 25.5776 19.7106 25.5776 19.7546 25.5772C21.3613 25.5598 22.859 25.0768 24.1154 24.2564C26.3163 22.8193 27.7816 20.3425 27.812 17.5197C27.8125 17.4755 27.8125 17.4248 27.8125 17.3414V12.8737C27.8125 10.8113 27.8125 9.19442 27.7002 7.89761C27.5859 6.57665 27.349 5.48868 26.8161 4.51276C26.0677 3.14219 24.9411 2.01561 23.5706 1.26722C22.5946 0.734327 21.5067 0.497448 20.1857 0.383079ZM5.44785 3.13229C6.0587 2.79874 6.8167 2.6024 7.99759 2.50016C9.19206 2.39674 10.7171 2.39581 12.8409 2.39581H15.1591C17.2829 2.39581 18.8079 2.39674 20.0024 2.50016C21.1833 2.6024 21.9413 2.79874 22.5521 3.13229C23.5652 3.68545 24.3979 4.51813 24.951 5.53117C25.2846 6.14201 25.4809 6.90002 25.5832 8.08091C25.6866 9.27537 25.6875 10.8004 25.6875 12.9242V17.3345C25.6875 17.3519 25.6875 17.3675 25.6875 17.3814C25.6875 17.4416 25.6874 17.4715 25.6871 17.4968C25.6693 19.155 24.9824 20.6524 23.8812 21.7317C22.6797 19.8993 20.6072 18.6875 18.25 18.6875H9.75C7.39275 18.6875 5.32031 19.8993 4.11882 21.7317C3.01763 20.6524 2.33075 19.155 2.31285 17.4968C2.31252 17.4657 2.3125 17.4276 2.3125 17.3345V12.9242C2.3125 10.8004 2.31343 9.27537 2.41685 8.0809C2.51909 6.90001 2.71543 6.14201 3.04898 5.53117C3.60213 4.51813 4.43482 3.68545 5.44785 3.13229ZM18.25 20.8125C19.8754 20.8125 21.3059 21.6551 22.1255 22.9295C21.394 23.2571 20.5849 23.4431 19.7316 23.4523C19.7006 23.4526 19.6625 23.4526 19.5693 23.4526L19.5473 23.4527C18.8829 23.4563 18.2478 23.7266 17.7844 24.2027L17.7691 24.2185L17.3172 24.688C16.3369 25.7066 15.6753 26.3906 15.1152 26.8334C14.5792 27.2571 14.2669 27.3517 14 27.3517C13.7331 27.3517 13.4208 27.2571 12.8848 26.8334C12.3247 26.3906 11.6631 25.7066 10.6828 24.688L10.2309 24.2185L10.2156 24.2027C9.75222 23.7266 9.11708 23.4563 8.45265 23.4527L8.43066 23.4526C8.33749 23.4526 8.29939 23.4526 8.26836 23.4523C7.41511 23.4431 6.60598 23.2571 5.87448 22.9295C6.69412 21.6551 8.12457 20.8125 9.75 20.8125H18.25Z" fill="#245435"/>
+                                </svg>
+                            </div>
+                            <h3 class="order__click-name">Потрібна допомога або намає часу?</h3>
+                        </div>
+                        <button class="order__click-btn btn">Замовити в 1 клік</button>
+                    </div>
+                    <div class="order__bottom">
+                        <div class="order__left">
+                            <div class="order__select">
+                                <button class="order__select-btn active" data-order-type="new-buyer">Я новий покупець</button>
+                                <button class="order__select-btn" data-order-type="registered-buyer">Я зареєстрований покупець</button>
+                            </div>
+                            <form class="order__content active" id="new-buyer" action="#">
+                                <div class="order__block">
+                                    <div class="order__block-content">
+                                        <div class="order__block-item">
+                                            <label for="name">ПІБ<span>*</span></label>
+                                            <input type="text" id="name" name="name" required>
+                                        </div>
+                                        <div class="order__block-box">
+                                            <div class="order__block-item">
+                                                <label for="tel">Телефон<span>*</span></label>
+                                                <input type="tel" id="tel" name="tel" required>
+                                            </div>
+                                            <div class="order__block-item">
+                                                <label for="email">Email (не обов’язково)</label>
+                                                <input type="email" id="email" name="email">
+                                            </div>
+                                        </div>
+                                    </div>                                    
+                                    <label class="order__block-checkbox">
+                                        <input type="checkbox" name="callback" value="Не телефонувати для підтвердження замовлення">
+                                        <span>Не телефонувати для підтвердження замовлення</span>
+                                    </label>
+                                </div>
+
+                                <hr>
+
+                                <div class="order__info">
+                                    <h3 class="order__info-name">Спосіб доставки</h3>
+                                    <div class="order__info-content">
+                                        <label>
+                                            <input type="radio" name="delivery" value="Нова Пошта - У відділення">
+                                            <span>Нова Пошта - У відділення</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="delivery" value="Нова Пошта - До будинку/квартири">
+                                            <span>Нова Пошта - До будинку/квартири</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="delivery" value="Укрпошта">
+                                            <span>Укрпошта</span>
+                                        </label>
+                                    </div>
+                                    <p class="order__info-descr">Доставка сплачується окремо відповідно до тарифів перевізника. Безкоштовна доставка діє для всіх замовлень від 1000 грн.</p>
+                                </div>
+
+                                <hr>
+
+                                <div class="order__block">
+                                    <h3 class="order__block-name">Адреса доставки</h3>
+                                    <div class="order__block-content">
+                                        <div class="order__block-box">
+                                            <div class="order__block-item">
+                                                <label for="region">Область <span>*</span></label>
+                                                <input type="region" id="region" name="region" required>
+                                            </div>
+                                            <div class="order__block-item">
+                                                <label for="city">Місто <span>*</span></label>
+                                                <input type="city" id="city" name="city" required>
+                                            </div>
+                                        </div>
+                                        <div class="order__block-item">
+                                            <label for="department">Віділення <span>*</span></label>
+                                            <input type="department" id="department" name="department" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="order__info">
+                                    <h3 class="order__info-name">Способи оплати</h3>
+                                    <div class="order__info-content">
+                                        <label>
+                                            <input type="radio" name="payments" value="Portmone">
+                                            <span>Portmone</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="payments" value="Накладний платіж">
+                                            <span>Накладний платіж</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="payments" value="По рахунку">
+                                            <span>По рахунку</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="order__block">
+                                    <h3 class="order__block-name">Ви можете додати коментар до замовлення</h3>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                            </form>
+
+                            <form class="order__content" id="registered-buyer" action="#">
+                                <div class="order__login">
+                                    <button class="order__login-btn" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                            <path d="M26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26C20.1797 26 26 20.1797 26 13Z" fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3611 13.1478C19.3611 12.6868 19.3197 12.2437 19.2429 11.8182H13.1211V14.3325H16.6193C16.4686 15.145 16.0106 15.8334 15.3222 16.2944V17.9253H17.4229C18.652 16.7937 19.3611 15.1273 19.3611 13.1478Z" fill="#4285F4"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1211 19.4999C14.8762 19.4999 16.3475 18.9178 17.423 17.9251L15.3223 16.2942C14.7402 16.6842 13.9957 16.9146 13.1211 16.9146C11.4282 16.9146 9.99523 15.7712 9.4841 14.2349H7.3125V15.919C8.38205 18.0433 10.5802 19.4999 13.1211 19.4999Z" fill="#34A853"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.48405 14.235C9.35405 13.845 9.28019 13.4284 9.28019 13C9.28019 12.5716 9.35405 12.155 9.48405 11.765V10.0809H7.31246C6.87223 10.9584 6.62109 11.9511 6.62109 13C6.62109 14.0488 6.87223 15.0416 7.31246 15.9191L9.48405 14.235Z" fill="#FBBC05"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1211 9.08523C14.0755 9.08523 14.9323 9.41319 15.6059 10.0573L17.4702 8.19296C16.3446 7.14409 14.8732 6.5 13.1211 6.5C10.5802 6.5 8.38205 7.95659 7.3125 10.0809L9.4841 11.765C9.99523 10.2286 11.4282 9.08523 13.1211 9.08523Z" fill="#EA4335"/>
+                                        </svg>
+                                        Увійти з Google
+                                    </button>
+                                    <button class="order__login-btn" type="button">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="26" height="26" rx="13" fill="#0B84EE"/>
+                                            <path d="M14.0085 13.5264H16.2742L16.6299 11.2108H14.008V9.94516C14.008 8.98321 14.3204 8.1302 15.2148 8.1302H16.652V6.10941C16.3995 6.0751 15.8654 6 14.8563 6C12.7492 6 11.5138 7.11957 11.5138 9.67025V11.2108H9.34766V13.5264H11.5138V19.8911C11.9428 19.956 12.3773 20 12.8234 20C13.2265 20 13.62 19.9629 14.0085 19.9101V13.5264Z" fill="white"/>
+                                        </svg>    
+                                        Увійти з Facebook
+                                    </button>
+                                </div>
+
+                                <div class="order__block">
+                                    <div class="order__block-content">
+                                        <div class="order__block-item">
+                                            <label for="useremail">Email або номер телефону<span>*</span></label>
+                                            <input type="text" id="useremail" name="useremail">
+                                        </div>
+                                        <div class="order__block-item">
+                                            <label for="userpassword">Пароль<span>*</span></label>
+                                            <input type="password" id="userpassword" name="userpassword" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="order__right">
+                            <div class="order__basket">
+                                <div class="basket__product-item">
+                                    <a class="basket__product-image" href="#">
+                                        <img src="img/product/1.png" alt="">
+                                    </a>
+                                    <div class="basket__product-content">
+                                        <a class="basket__product-title" href="#">
+                                            <h3>Хоробра № 30</h3>
+                                        </a>
+                                        <p class="basket__product-article">Артикул: <span>FTXP35</span></p>
+                                        <p class="basket__product-price" data-price-old="950 грн">700 грн</p>
+                                        <div class="basket__product-count">
+                                            <button class="basket__product-minus">-</button>
+                                            <span class="basket__product-amount">1</span>
+                                            <button class="basket__product-plus">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__product-item">
+                                    <a class="basket__product-image" href="#">
+                                        <img src="img/product/4.png" alt="">
+                                    </a>
+                                    <div class="basket__product-content">
+                                        <a class="basket__product-title" href="#">
+                                            <h3>Хоробра № 30</h3>
+                                        </a>
+                                        <p class="basket__product-article">Артикул: <span>FTXP35</span></p>
+                                        <p class="basket__product-price" data-price-old="950 грн">700 грн</p>
+                                        <div class="basket__product-count">
+                                            <button class="basket__product-minus">-</button>
+                                            <span class="basket__product-amount">1</span>
+                                            <button class="basket__product-plus">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="basket__form" action="#">
+                                <input type="text" placeholder="Увести промокод" required="">
+                                <button class="basket__form-btn link" type="submit">Застосувати</button>
+                            </form>
+                            <div class="basket__bottom">
+                                <p class="basket__bottom-descr">Знижка <span>500 грн</span></p>
+                                <p class="basket__bottom-descr">До сплати <span>1400 грн</span></p>
+                                <p class="basket__bottom-total">Всього: <span>1400 грн</span></p>
+                            </div>
+                            <div class="basket__buttons">
+                                <button class="basket__close-order btn" href="#" type="submit">Оформити замовлення</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="fixedBtns">
+            <a class="fixedBtns__tel" href="tel:+">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.8264 2.29151C11.5437 2.2915 11.8612 2.29213 12.1231 2.31558C15.0342 2.57621 17.3413 4.88331 17.6019 7.7944C17.6253 8.05624 17.626 8.37374 17.626 9.09113V9.91608C17.626 10.2613 17.9058 10.5411 18.251 10.5411C18.5961 10.5411 18.876 10.2613 18.876 9.91608V9.0491C18.876 8.38501 18.876 8.00762 18.8469 7.68293C18.5324 4.16955 15.7479 1.38512 12.2345 1.07056C11.9098 1.04148 11.5325 1.04149 10.8683 1.0415H10.0014C9.65621 1.0415 9.37639 1.32133 9.37639 1.66651C9.37639 2.01168 9.65621 2.29151 10.0014 2.29151L10.8264 2.29151Z" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.92783 3.35425C5.05109 2.54864 3.70346 2.54864 2.82672 3.35425C2.79082 3.38724 2.75249 3.42558 2.70272 3.47536L1.9548 4.22328C1.2022 4.97588 0.88627 6.06081 1.11716 7.09979C2.42713 12.9947 7.03091 17.5985 12.9258 18.9084C13.9648 19.1393 15.0497 18.8234 15.8023 18.0708L16.5501 17.323C16.6 17.2731 16.6383 17.2348 16.6713 17.1989C17.4769 16.3221 17.4769 14.9745 16.6713 14.0978C16.6383 14.0618 16.6 14.0235 16.5501 13.9737L15.3258 12.7493C14.4757 11.8992 13.1919 11.6561 12.0899 12.1365C11.4589 12.4115 10.724 12.2723 10.2373 11.7856L8.23996 9.78829C7.75329 9.30161 7.6141 8.56666 7.88912 7.93574C8.3695 6.83369 8.12638 5.54991 7.27629 4.69983L6.05185 3.47538C6.00207 3.42559 5.96374 3.38725 5.92783 3.35425ZM3.67248 4.27469C4.071 3.9085 4.68355 3.9085 5.08207 4.27469C5.09583 4.28733 5.11386 4.30516 5.17725 4.36855L6.39241 5.58371C6.87908 6.07038 7.01827 6.80534 6.74325 7.43626C6.26287 8.53831 6.50599 9.82208 7.35608 10.6722L9.35342 12.6695C10.2035 13.5196 11.4873 13.7627 12.5893 13.2823C13.2203 13.0073 13.9552 13.1465 14.4419 13.6332L15.657 14.8483C15.7204 14.9117 15.7383 14.9298 15.7509 14.9435C16.1171 15.342 16.1171 15.9546 15.7509 16.3531C15.7383 16.3669 15.7204 16.3849 15.657 16.4483L14.9184 17.1869C14.468 17.6373 13.8187 17.8264 13.197 17.6882C7.77585 16.4835 3.54208 12.2497 2.33739 6.82863C2.19921 6.20684 2.38829 5.55756 2.83868 5.10717L3.5773 4.36855C3.64069 4.30516 3.65872 4.28733 3.67248 4.27469Z" fill="white"/>
+                    <path d="M10.5906 3.98778C10.2454 3.98778 9.96556 4.26761 9.96556 4.61278C9.96556 4.95796 10.2454 5.23778 10.5906 5.23778H11.062C11.071 5.23778 11.0795 5.23778 11.0873 5.23778C11.142 5.23779 11.1675 5.23784 11.1887 5.23815C13.105 5.26559 14.6518 6.81242 14.6792 8.72873C14.6796 8.75296 14.6796 8.78272 14.6796 8.85542V9.32683C14.6796 9.67201 14.9594 9.95183 15.3046 9.95183C15.6498 9.95183 15.9296 9.67201 15.9296 9.32683V8.84937C15.9296 8.84128 15.9296 8.83358 15.9296 8.82624C15.9296 8.77484 15.9295 8.74091 15.9291 8.71083C15.892 6.11817 13.7992 4.02541 11.2066 3.98827C11.1722 3.98778 11.1328 3.98778 11.068 3.98778H10.5906Z" fill="white"/>
+                </svg>
+            </a>
+            <a class="fixedBtns__link" href="#">
+                <svg width="12" height="26" viewBox="0 0 12 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.9322 6.30178V19.6977C10.9322 22.5683 8.73328 24.8779 6.00029 24.8779C3.26731 24.8779 1.06836 22.5683 1.06836 19.6977V6.30178C1.06836 3.43123 3.26731 1.12158 6.00029 1.12158C7.35108 1.12158 8.57621 1.71549 9.48721 2.63935C10.3668 3.5962 10.9322 4.883 10.9322 6.30178Z" fill="#BB974D"/>
+                    <path d="M6 1.12183C7.35078 1.12183 8.57592 1.71574 9.48691 2.63959C10.3665 3.56345 10.9319 4.88325 10.9319 6.30203V19.698C10.9319 22.5685 8.73298 24.8782 6 24.8782C3.26701 24.8782 1.06806 22.5685 1.06806 19.698V6.30203C1.06806 3.43147 3.26701 1.12183 6 1.12183ZM6 0C5.18325 0 4.39791 0.164975 3.67539 0.494924C2.95288 0.824873 2.32461 1.2538 1.75916 1.84771C1.19372 2.44162 0.78534 3.10152 0.471204 3.86041C0.157068 4.65228 0 5.47716 0 6.30203V19.698C0 20.5558 0.157068 21.3807 0.471204 22.1396C0.78534 22.8985 1.19372 23.5584 1.75916 24.1523C2.32461 24.7462 2.95288 25.1751 3.67539 25.5051C4.42932 25.835 5.21466 26 6 26C6.81675 26 7.6021 25.835 8.32461 25.5051C9.04712 25.1751 9.67539 24.7462 10.2408 24.1523C10.8063 23.5584 11.2147 22.8985 11.5288 22.1396C11.8429 21.3477 12 20.5228 12 19.698V6.30203C12 5.44416 11.8429 4.61929 11.5288 3.86041C11.2147 3.10152 10.8063 2.44162 10.2408 1.84771C9.67539 1.2538 9.04712 0.824873 8.32461 0.494924C7.6021 0.164975 6.81675 0 6 0Z" fill="white"/>
+                    <path d="M10.9322 13V19.698C10.9322 22.5685 8.73328 24.8782 6.00029 24.8782C3.26731 24.8782 1.06836 22.5685 1.06836 19.698V13H10.9322Z" fill="#FFFDFD"/>
+                    <path d="M10.9319 6.30178V12.9998H10.0209C10.0209 12.9998 10.178 8.90839 10.0209 5.60889C9.86387 2.3094 6 1.12158 6 1.12158C7.35079 1.12158 8.57592 1.71549 9.48691 2.63935C10.3665 3.5962 10.9319 4.883 10.9319 6.30178Z" fill="#E0BE82"/>
+                    <g opacity="0.5">
+                        <path d="M10.93 19.698V13H10.019C10.019 13 10.1761 17.0914 10.019 20.3909C9.86192 23.6904 5.99805 24.8782 5.99805 24.8782C7.34883 24.8782 8.57396 24.2843 9.48496 23.3604C10.3645 22.4365 10.93 21.1167 10.93 19.698Z" fill="#E2E2E2"/>
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <section class="basket">
+            <div class="basket__inner">
+                <div class="basket__top">
+                    <h2 class="basket__title">В кошику (1) товари</h2>
+                    <button class="basket__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M15.5304 1.53033C15.8232 1.23744 15.8232 0.762563 15.5304 0.46967C15.2375 0.176777 14.7626 0.176777 14.4697 0.46967L8.00001 6.93935L1.53033 0.469673C1.23744 0.17678 0.762563 0.17678 0.46967 0.469673C0.176777 0.762566 0.176777 1.23744 0.46967 1.53033L6.93935 8.00001L0.469697 14.4697C0.176804 14.7626 0.176804 15.2374 0.469697 15.5303C0.76259 15.8232 1.23746 15.8232 1.53036 15.5303L8.00001 9.06067L14.4697 15.5303C14.7626 15.8232 15.2374 15.8232 15.5303 15.5303C15.8232 15.2374 15.8232 14.7626 15.5303 14.4697L9.06067 8.00002L15.5304 1.53033Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="basket__content">
+                    <div class="basket__product">
+                        <div class="basket__product-item">
+                            <a class="basket__product-image" href="#">
+                                <img src="img/product/1.png" alt="">
+                            </a>
+                            <div class="basket__product-content">
+                                <a class="basket__product-title" href="#">
+                                    <h3>Хоробра № 30</h3>
+                                </a>
+                                <p class="basket__product-article">Артикул: <span>FTXP35</span></p>
+                                <p class="basket__product-price" data-price-old="950 грн">700 грн</p>
+                                <div class="basket__product-count">
+                                    <button class="basket__product-minus">-</button>
+                                    <span class="basket__product-amount">1</span>
+                                    <button class="basket__product-plus">+</button>
+                                </div>
+                            </div>
+                            <button class="basket__product-delete"></button>
+                        </div>
+                    </div>
+                    <div class="basket__recommendation-top">
+                        <h3 class="basket__recommendation-title">Наші рекомендації</h3>
+                        <div class="basket__recommendation-buttons">
+                            <button class="basket__recommendation-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                    <path d="M4.22703 0.389343C4.47219 0.146357 4.86792 0.148122 5.1109 0.393286C5.35389 0.638451 5.35212 1.03417 5.10696 1.27716L3.63782 2.73325C3.04157 3.3242 2.63257 3.7309 2.35582 4.07551C2.26588 4.1875 2.19571 4.28609 2.14122 4.37492L14.667 4.37492C15.0122 4.37492 15.292 4.65474 15.292 4.99992C15.292 5.3451 15.0122 5.62492 14.667 5.62492L2.14122 5.62492C2.19571 5.71375 2.26588 5.81234 2.35582 5.92433C2.63257 6.26894 3.04157 6.67564 3.63782 7.26659L5.10696 8.72268C5.35212 8.96566 5.35389 9.36139 5.1109 9.60655C4.86792 9.85172 4.47219 9.85348 4.22703 9.61049L2.73141 8.12816C2.1681 7.56988 1.70771 7.11359 1.38121 6.70704C1.04168 6.28426 0.795904 5.85515 0.73025 5.34005C0.715857 5.22713 0.708659 5.11352 0.708659 4.99992C0.708659 4.88631 0.715857 4.77271 0.73025 4.65978C0.795904 4.14469 1.04168 3.71557 1.38121 3.2928C1.70771 2.88624 2.16811 2.42995 2.73143 1.87166L4.22703 0.389343Z" fill="#1F1F1F"/>
+                                </svg>
+                            </button>
+                            <button class="basket__recommendation-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                                    <path d="M11.773 0.389343C11.5278 0.146357 11.1321 0.148122 10.8891 0.393286C10.6461 0.638451 10.6479 1.03417 10.893 1.27716L12.3622 2.73325C12.9584 3.3242 13.3674 3.7309 13.6442 4.07551C13.7341 4.1875 13.8043 4.28609 13.8588 4.37492L1.33301 4.37492C0.98783 4.37492 0.708008 4.65474 0.708008 4.99992C0.708008 5.3451 0.98783 5.62492 1.33301 5.62492L13.8588 5.62492C13.8043 5.71375 13.7341 5.81234 13.6442 5.92433C13.3674 6.26894 12.9584 6.67564 12.3622 7.26659L10.893 8.72268C10.6479 8.96566 10.6461 9.36139 10.8891 9.60655C11.1321 9.85172 11.5278 9.85348 11.773 9.61049L13.2686 8.12816C13.8319 7.56988 14.2923 7.11359 14.6188 6.70704C14.9583 6.28426 15.2041 5.85515 15.2697 5.34005C15.2841 5.22713 15.2913 5.11352 15.2913 4.99992C15.2913 4.88631 15.2841 4.77271 15.2697 4.65978C15.2041 4.14469 14.9583 3.71557 14.6188 3.2928C14.2923 2.88624 13.8319 2.42995 13.2686 1.87166L11.773 0.389343Z" fill="#1F1F1F"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="basket__recommendation">
+                        <div class="swiper-wrapper">
+                            <div class="basket__recommendation-slide swiper-slide">
+                                <a class="basket__recommendation-image" href="#">
+                                    <img src="img/product/6.png" alt="">
+                                </a>
+                                <div class="basket__recommendation-content">
+                                    <a class="basket__recommendation-name" href="#">
+                                        <h3>Петагма таблетки №30</h3>
+                                    </a>                                    
+                                    <p class="basket__recommendation-price">200 грн</p>
+                                    <button class="basket__recommendation-btn btn">Купити</button>
+                                </div>
+                            </div>
+                            <div class="basket__recommendation-slide swiper-slide">
+                                <a class="basket__recommendation-image" href="#">
+                                    <img src="img/product/6.png" alt="">
+                                </a>
+                                <div class="basket__recommendation-content">
+                                    <a class="basket__recommendation-name" href="#">
+                                        <h3>Петагма таблетки №30</h3>
+                                    </a>                                    
+                                    <p class="basket__recommendation-price">200 грн</p>
+                                    <button class="basket__recommendation-btn btn">Купити</button>
+                                </div>
+                            </div>
+                            <div class="basket__recommendation-slide swiper-slide">
+                                <a class="basket__recommendation-image" href="#">
+                                    <img src="img/product/6.png" alt="">
+                                </a>
+                                <div class="basket__recommendation-content">
+                                    <a class="basket__recommendation-name" href="#">
+                                        <h3>Петагма таблетки №30</h3>
+                                    </a>                                    
+                                    <p class="basket__recommendation-price">200 грн</p>
+                                    <button class="basket__recommendation-btn btn">Купити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="basket__form" action="#">
+                        <input type="text" placeholder="Увести промокод" required>
+                        <button class="basket__form-btn link" type="submit">Застосувати</button>
+                    </form>
+                    <div class="basket__bottom">
+                        <p class="basket__bottom-descr">Знижка <span>250 грн</span></p>
+                        <p class="basket__bottom-descr">До сплати <span>700 грн</span></p>
+                        <p class="basket__bottom-total">Всього: <span>700 грн</span></p>
+                    </div>
+                    <div class="basket__buttons">
+                        <button class="basket__close-btn">Повернутися до покупок</button>
+                        <a class="basket__close-order btn" href="order.html">Оформити замовлення</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="userpopup">
+            <div class="container">
+                <div class="userpopup__inner">
+                    <div class="userpopup__content active">
+                        <h2 class="userpopup__title">
+                            <img src="img/header/login-client.png" alt="">                           
+                            Вхід для клієнтів
+                        </h2>
+                        <form class="userpopup__form" action="#">
+                            <div class="userpopup__form-block active">
+                                <input type="tel" name="tel" placeholder="Номер телефону" required>
+                                <button class="userpopup__btn btn" type="button">Отримати код</button>
+                            </div>
+                            <div class="userpopup__form-block">
+                                <input type="number" name="number" placeholder="Ввести код" required>
+                                <button class="userpopup__btn btn" type="submit">Увійти</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="userpopup__content">
+                        <h2 class="userpopup__title">
+                            <img src="img/header/login-doctor.png" alt="">                           
+                            Вхід для лікарів
+                        </h2>
+                        <form class="userpopup__form" action="#">
+                            <div class="userpopup__form-block active">
+                                <input type="tel" name="tel" placeholder="Номер телефону" required>
+                                <input type="password" name="password" placeholder="Пароль" required>
+                                <button class="userpopup__btn btn" type="submit">Увійти</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <button class="userpopup__close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M15.5304 1.53033C15.8232 1.23744 15.8232 0.762563 15.5304 0.46967C15.2375 0.176777 14.7626 0.176777 14.4697 0.46967L8.00001 6.93935L1.53033 0.469673C1.23744 0.17678 0.762563 0.17678 0.46967 0.469673C0.176777 0.762566 0.176777 1.23744 0.46967 1.53033L6.93935 8.00001L0.469697 14.4697C0.176804 14.7626 0.176804 15.2374 0.469697 15.5303C0.76259 15.8232 1.23746 15.8232 1.53036 15.5303L8.00001 9.06067L14.4697 15.5303C14.7626 15.8232 15.2374 15.8232 15.5303 15.5303C15.8232 15.2374 15.8232 14.7626 15.5303 14.4697L9.06067 8.00002L15.5304 1.53033Z" fill="#1F1F1F"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="blockSlider">
+            <div class="blockSlider__content">
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+                <p class="blockSlider__name">Пігульня №1</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <a class="footer__logo" href="index.html">
+                        <img src="img/footer-logo.svg" alt="">
+                    </a>
+                    <div class="footer__block">
+                        <a class="footer__tel" href="tel:+380931233122">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M13.2803 9.21969C12.987 8.92644 12.513 8.92644 12.2198 9.21969L11.0243 10.4152C10.47 10.2502 9.43576 9.87519 8.78026 9.21969C8.12476 8.56419 7.74976 7.52994 7.58476 6.97569L8.78026 5.78019C9.07351 5.48694 9.07351 5.01294 8.78026 4.71969L5.78026 1.71969C5.48701 1.42644 5.01301 1.42644 4.71976 1.71969L2.68576 3.75369C2.40076 4.03869 2.24026 4.43019 2.24626 4.82994C2.26351 5.89794 2.54626 9.60744 5.46976 12.5309C8.39326 15.4544 12.1028 15.7364 13.1715 15.7544C13.1753 15.7544 13.1888 15.7544 13.1925 15.7544C13.5885 15.7544 13.9628 15.5984 14.2463 15.3149L16.2803 13.2809C16.5735 12.9877 16.5735 12.5137 16.2803 12.2204L13.2803 9.21969ZM13.185 14.2537C12.249 14.2379 9.04651 13.9867 6.53026 11.4697C4.00576 8.94519 3.76126 5.73144 3.74626 4.81419L5.25001 3.31044L7.18951 5.24994L6.21976 6.21969C6.04051 6.39819 5.96401 6.65619 6.01576 6.90369C6.03376 6.98994 6.47401 9.03519 7.71901 10.2802C8.96401 11.5252 11.0093 11.9654 11.0955 11.9834C11.3453 12.0367 11.601 11.9594 11.7795 11.7802L12.75 10.8104L14.6895 12.7499L13.185 14.2537Z" fill="#245435"/>
+                            </svg>
+                            +38 (093) 12 33 122
+                        </a>
+                        <p class="footer__date">ПН-ПТ: 9:00-19:00</p>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                <path d="M20 0.63765L16.8364 17.2506C16.8364 17.2506 16.3938 18.4025 15.1778 17.8501L7.8785 12.0204L7.84465 12.0032C8.83062 11.081 16.4762 3.92047 16.8104 3.59589C17.3276 3.09321 17.0065 2.79395 16.4059 3.17367L5.11241 10.6443L0.755409 9.11728C0.755409 9.11728 0.0697445 8.86323 0.00378194 8.31082C-0.0630486 7.7575 0.777975 7.45824 0.777975 7.45824L18.5401 0.200062C18.5401 0.200062 20 -0.468074 20 0.63765V0.63765Z" fill="#1BA5F0"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
+                                <path d="M12.3839 0.427237C9.47993 -0.142412 6.46422 -0.142412 3.56021 0.427237C2.27574 0.712061 0.656196 2.30708 0.376963 3.56031C-0.125654 6.0098 -0.125654 8.51625 0.376963 10.9657C0.712042 12.219 2.33159 13.814 3.56021 14.0988C3.61605 14.0988 3.6719 14.1558 3.6719 14.2127V17.8015C3.6719 17.9724 3.89529 18.0864 4.00698 17.9155L5.68237 16.1496C5.68237 16.1496 7.02269 14.7254 7.24607 14.4976C7.24607 14.4976 7.30192 14.4406 7.35777 14.4406C9.03316 14.4976 10.7644 14.3267 12.4398 14.0419C13.7243 13.757 15.3438 12.162 15.623 10.9088C16.1257 8.45929 16.1257 5.95283 15.623 3.50334C15.288 2.30708 13.6684 0.712061 12.3839 0.427237ZM12.4398 11.1366C12.1606 11.7063 11.8255 12.162 11.267 12.4468C11.0995 12.5038 10.9319 12.5608 10.7644 12.6177C10.541 12.5608 10.3735 12.5038 10.2059 12.4468C8.41885 11.7063 6.74346 10.6809 5.40314 9.19983C4.67714 8.34536 4.06283 7.37696 3.56021 6.35159C3.33682 5.8389 3.11344 5.38318 2.9459 4.8705C2.77836 4.41478 3.05759 3.95906 3.33682 3.61727C3.61605 3.27548 3.95113 3.04762 4.34206 2.87673C4.62129 2.70583 4.90052 2.81976 5.12391 3.04762C5.57068 3.61727 6.01745 4.18692 6.35253 4.81353C6.57592 5.21229 6.52007 5.66801 6.12914 5.95283C6.01745 6.0098 5.9616 6.06676 5.84991 6.18069C5.79406 6.23766 5.68237 6.29462 5.62652 6.40855C5.51483 6.57945 5.51483 6.75034 5.57068 6.92124C6.01745 8.23143 6.85515 9.2568 8.13961 9.82645C8.363 9.94038 8.53054 9.99734 8.80977 9.99734C9.2007 9.94038 9.36824 9.48466 9.64747 9.2568C9.9267 9.02894 10.2618 9.02894 10.5969 9.19983C10.8761 9.37073 11.1553 9.59859 11.4904 9.82645C11.7696 10.0543 12.0489 10.2252 12.3281 10.4531C12.4956 10.567 12.5515 10.8518 12.4398 11.1366ZM10.0942 6.86427C9.98255 6.86427 10.0384 6.86427 10.0942 6.86427C9.87085 6.86427 9.81501 6.75034 9.75916 6.57945C9.75916 6.46552 9.75916 6.29462 9.70331 6.18069C9.64747 5.95283 9.53578 5.72497 9.31239 5.55408C9.2007 5.49711 9.089 5.44015 8.97731 5.38318C8.80977 5.32622 8.69808 5.32622 8.53054 5.32622C8.363 5.26925 8.30715 5.15532 8.30715 4.98443C8.30715 4.8705 8.47469 4.75657 8.58639 4.75657C9.47993 4.81354 10.1501 5.32622 10.2618 6.40855C10.2618 6.46552 10.2618 6.57945 10.2618 6.63641C10.2618 6.75034 10.2059 6.86427 10.0942 6.86427ZM9.53577 4.35782C9.25654 4.24389 8.97731 4.12996 8.64223 4.07299C8.53054 4.07299 8.363 4.01603 8.25131 4.01603C8.08377 4.01603 7.97208 3.9021 8.02792 3.7312C8.02792 3.56031 8.13962 3.44638 8.30715 3.50334C8.86562 3.56031 9.36824 3.67424 9.87086 3.9021C10.8761 4.41478 11.4346 5.26925 11.6021 6.40855C11.6021 6.46552 11.6021 6.52248 11.6021 6.57945C11.6021 6.69338 11.6021 6.80731 11.6021 6.9782C11.6021 7.03517 11.6021 7.09213 11.6021 7.1491C11.5462 7.37696 11.1553 7.43392 11.0995 7.1491C11.0995 7.09213 11.0436 6.9782 11.0436 6.92124C11.0436 6.40855 10.9319 5.89587 10.7086 5.44015C10.3735 4.92746 9.98255 4.58568 9.53577 4.35782ZM12.5515 7.77571C12.3839 7.77571 12.2722 7.60482 12.2722 7.43392C12.2722 7.09213 12.2164 6.75034 12.1606 6.40855C11.9372 4.58567 10.4852 3.10459 8.75393 2.81976C8.4747 2.7628 8.19546 2.7628 7.97208 2.70583C7.80454 2.70583 7.58115 2.70583 7.5253 2.47797C7.46946 2.30708 7.637 2.13618 7.80454 2.13618C7.86038 2.13618 7.91623 2.13618 7.91623 2.13618C10.2059 2.19315 8.02792 2.13618 7.91623 2.13618C10.2618 2.19315 12.2164 3.78817 12.6073 6.18069C12.6632 6.57945 12.719 6.9782 12.719 7.43392C12.8307 7.60482 12.719 7.77571 12.5515 7.77571Z" fill="#6623B8"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M15.3659 2.625C13.6725 0.937499 11.4146 0 9.03136 0C4.07665 0 0.0627168 4 0.0627168 8.9375C0.0627168 10.5 0.501742 12.0625 1.25436 13.375L0 18L4.76655 16.75C6.08362 17.4375 7.52613 17.8125 9.03136 17.8125C13.9861 17.8125 18 13.8125 18 8.875C17.9373 6.5625 17.0592 4.3125 15.3659 2.625ZM13.3589 12.125C13.1707 12.625 12.2927 13.125 11.8537 13.1875C11.4773 13.25 10.9756 13.25 10.4739 13.125C10.1603 13 9.72125 12.875 9.21951 12.625C6.96167 11.6875 5.51916 9.4375 5.39373 9.25C5.26829 9.125 4.45296 8.0625 4.45296 6.9375C4.45296 5.8125 5.01742 5.3125 5.20557 5.0625C5.39373 4.8125 5.6446 4.8125 5.83275 4.8125C5.95819 4.8125 6.14634 4.8125 6.27177 4.8125C6.39721 4.8125 6.58536 4.75 6.77352 5.1875C6.96167 5.625 7.40069 6.75 7.46341 6.8125C7.52613 6.9375 7.52613 7.0625 7.46341 7.1875C7.40069 7.3125 7.33798 7.4375 7.21254 7.5625C7.08711 7.6875 6.96167 7.875 6.89895 7.9375C6.77352 8.0625 6.64808 8.1875 6.77352 8.375C6.89895 8.625 7.33798 9.3125 8.02787 9.9375C8.90592 10.6875 9.59582 10.9375 9.84669 11.0625C10.0976 11.1875 10.223 11.125 10.3484 11C10.4739 10.875 10.9129 10.375 11.0383 10.125C11.1638 9.875 11.3519 9.9375 11.5401 10C11.7282 10.0625 12.8571 10.625 13.0453 10.75C13.2962 10.875 13.4216 10.9375 13.4843 11C13.547 11.1875 13.547 11.625 13.3589 12.125Z" fill="#50CA6B"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer__adress">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M11.25 7.5C11.25 8.74264 10.2426 9.75 9 9.75C7.75736 9.75 6.75 8.74264 6.75 7.5C6.75 6.25736 7.75736 5.25 9 5.25C10.2426 5.25 11.25 6.25736 11.25 7.5Z" fill="#245435"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 7.5C3.75 11.4375 9 15.75 9 15.75C9 15.75 14.25 11.4375 14.25 7.5C14.25 4.5975 11.9025 2.25 9 2.25C6.0975 2.25 3.75 4.5975 3.75 7.5ZM5.25 7.5C5.25 5.42593 6.92593 3.75 9 3.75C11.0741 3.75 12.75 5.42593 12.75 7.5C12.75 8.89552 11.7632 10.5972 10.4741 12.1396C9.95354 12.7624 9.42993 13.3052 9 13.723C8.57007 13.3052 8.04646 12.7624 7.52592 12.1396C6.23677 10.5972 5.25 8.89552 5.25 7.5Z" fill="#245435"/>
+                        </svg>
+                        Київ. Вул. Павла Тичини , 1В 4 поверх, офіс А,, 02152
+                    </p>
+                    <a class="footer__email" href="mailto:">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 4.5C1.5 3.67157 2.17157 3 3 3H15C15.8284 3 16.5 3.67157 16.5 4.5V13.5C16.5 14.3284 15.8284 15 15 15H3C2.17157 15 1.5 14.3284 1.5 13.5V4.5ZM15 5.90138V13.5H3V5.90138L9 9.90138L15 5.90138ZM14.3979 4.5H3.60209L9 8.0986L14.3979 4.5Z" fill="#245435"/>
+                        </svg>
+                        info@pigulnia.com.ua
+                    </a>
+                </div>
+
+                <div class="footer__box">
+                    <h3 class="footer__name">Каталог</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Жіноче здоров'я</a>
+                        </li>
+                        <li>
+                            <a href="#">Нервова система</a>
+                        </li>
+                        <li>
+                            <a href="#">Сечостатева система</a>
+                        </li>
+                        <li>
+                            <a href="#">Чоловіче здоров'я</a>
+                        </li>
+                        <li>
+                            <a href="#">Ендокринологія</a>
+                        </li>
+                        <li>
+                            <a href="#">Вітаміни та мінерали</a>
+                        </li>
+                        <li>
+                            <a href="#">Акції</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <h3 class="footer__name">Споживачу</h3>
+                    <ul>
+                        <li>
+                            <a href="delivery-and-payment.html">Доставка, оплата, повернення</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Блог</a>
+                        </li>
+                        <li>
+                            <a href="#">Консультація нутріціолога</a>
+                        </li>
+                        <li>
+                            <a href="#">Партнери</a>
+                        </li>
+                        <li>
+                            <a href="contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__box">
+                    <h3 class="footer__name">Слідкувати у соц. <br>мережах</h3>
+                    <div class="footer__box-socials">
+                        <a href="#" target="_blank">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#0B84EE"/>
+                                <path d="M17.1528 16.6016H19.7422L20.1487 13.9552H17.1523V12.5088C17.1523 11.4094 17.5094 10.4345 18.5315 10.4345H20.174V8.12504C19.8854 8.08583 19.2751 8 18.1218 8C15.7136 8 14.3018 9.27951 14.3018 12.1946V13.9552H11.8262V16.6016H14.3018V23.8755C14.792 23.9497 15.2886 24 15.7984 24C16.2592 24 16.7089 23.9576 17.1528 23.8972V16.6016Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="url(#paint0_radial_1_4377)"/>
+                                <path d="M16 11.2651C17.8554 11.2651 18.1084 11.2651 18.8675 11.2651C19.5422 11.2651 19.8795 11.4337 20.1325 11.5181C20.4699 11.6867 20.7229 11.7711 20.9759 12.0241C21.2289 12.2771 21.3976 12.5301 21.4819 12.8675C21.5663 13.1205 21.6506 13.4578 21.7349 14.1325C21.7349 14.8916 21.7349 15.0602 21.7349 17C21.7349 18.9398 21.7349 19.1084 21.7349 19.8675C21.7349 20.5422 21.5663 20.8795 21.4819 21.1325C21.3133 21.4699 21.2289 21.7229 20.9759 21.9759C20.7229 22.2289 20.4699 22.3976 20.1325 22.4819C19.8795 22.5663 19.5422 22.6506 18.8675 22.7349C18.1084 22.7349 17.9398 22.7349 16 22.7349C14.0602 22.7349 13.8916 22.7349 13.1325 22.7349C12.4578 22.7349 12.1205 22.5663 11.8675 22.4819C11.5301 22.3133 11.2771 22.2289 11.0241 21.9759C10.7711 21.7229 10.6024 21.4699 10.5181 21.1325C10.4337 20.8795 10.3494 20.5422 10.2651 19.8675C10.2651 19.1084 10.2651 18.9398 10.2651 17C10.2651 15.0602 10.2651 14.8916 10.2651 14.1325C10.2651 13.4578 10.4337 13.1205 10.5181 12.8675C10.6867 12.5301 10.7711 12.2771 11.0241 12.0241C11.2771 11.7711 11.5301 11.6024 11.8675 11.5181C12.1205 11.4337 12.4578 11.3494 13.1325 11.2651C13.8916 11.2651 14.1446 11.2651 16 11.2651ZM16 10C14.0602 10 13.8916 10 13.1325 10C12.3735 10 11.8675 10.1687 11.4458 10.3373C11.0241 10.506 10.6024 10.759 10.1807 11.1807C9.75904 11.6024 9.59036 11.9398 9.33735 12.4458C9.16868 12.8675 9.08434 13.3735 9 14.1325C9 14.8916 9 15.1446 9 17C9 18.9398 9 19.1084 9 19.8675C9 20.6265 9.16868 21.1325 9.33735 21.5542C9.50602 21.9759 9.75904 22.3976 10.1807 22.8193C10.6024 23.241 10.9398 23.4096 11.4458 23.6627C11.8675 23.8313 12.3735 23.9157 13.1325 24C13.8916 24 14.1446 24 16 24C17.8554 24 18.1084 24 18.8675 24C19.6265 24 20.1325 23.8313 20.5542 23.6627C20.9759 23.494 21.3976 23.241 21.8193 22.8193C22.241 22.3976 22.4096 22.0602 22.6627 21.5542C22.8313 21.1325 22.9157 20.6265 23 19.8675C23 19.1084 23 18.8554 23 17C23 15.1446 23 14.8916 23 14.1325C23 13.3735 22.8313 12.8675 22.6627 12.4458C22.494 12.0241 22.241 11.6024 21.8193 11.1807C21.3976 10.759 21.0602 10.5904 20.5542 10.3373C20.1325 10.1687 19.6265 10.0843 18.8675 10C18.1084 10 17.9398 10 16 10Z" fill="white"/>
+                                <path d="M16 13.3735C13.9759 13.3735 12.3735 14.9759 12.3735 17C12.3735 19.0241 13.9759 20.6265 16 20.6265C18.0241 20.6265 19.6265 19.0241 19.6265 17C19.6265 14.9759 18.0241 13.3735 16 13.3735ZM16 19.3614C14.7349 19.3614 13.6386 18.3494 13.6386 17C13.6386 15.7349 14.6506 14.6386 16 14.6386C17.2651 14.6386 18.3614 15.6506 18.3614 17C18.3614 18.2651 17.2651 19.3614 16 19.3614Z" fill="white"/>
+                                <path d="M19.7108 14.1325C20.1766 14.1325 20.5542 13.7549 20.5542 13.2892C20.5542 12.8234 20.1766 12.4458 19.7108 12.4458C19.2451 12.4458 18.8675 12.8234 18.8675 13.2892C18.8675 13.7549 19.2451 14.1325 19.7108 14.1325Z" fill="white"/>
+                                <defs>
+                                    <radialGradient id="paint0_radial_1_4377" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32.6437 0.650001) scale(73.8975)">
+                                        <stop stop-color="#F9ED32"/>
+                                        <stop offset="0.36" stop-color="#EE2A7B"/>
+                                        <stop offset="0.44" stop-color="#D22A8A"/>
+                                        <stop offset="0.6" stop-color="#8B2AB2"/>
+                                        <stop offset="0.83" stop-color="#1B2AF0"/>
+                                        <stop offset="0.88" stop-color="#002AFF"/>
+                                    </radialGradient>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="16" fill="#F40000"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.1743 20.7045C9.91283 20.6272 9.67423 20.4895 9.47865 20.3032C9.28308 20.1169 9.13628 19.8875 9.05065 19.6342C8.5613 18.3249 8.4163 12.858 9.35876 11.7787C9.67242 11.4276 10.1153 11.2115 10.5912 11.1772C13.1195 10.9118 20.931 10.9472 21.8281 11.2656C22.0805 11.3455 22.311 11.4802 22.5025 11.6594C22.6939 11.8387 22.8414 12.0579 22.9337 12.3006C23.4684 13.6541 23.4865 18.5726 22.8612 19.873C22.6954 20.2115 22.4177 20.4857 22.0728 20.6515C21.1304 21.1115 11.4249 21.1026 10.1743 20.7045V20.7045ZM14.1888 18.1391L18.7199 15.8391L14.1888 13.5214V18.1391Z" fill="white"/>
+                            </svg>                                
+                        </a>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__copy">© 2023 ТОВ "СІСТЕМ ФАРМ". Усі права захищені</p>
+                        <p class="footer__develop">Розробка сайту - ImpulseDesign</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>
