@@ -26,8 +26,6 @@ ratingInputs.forEach(input => {
 });
 updateStars();
 
-
-
 const imageInput = document.getElementById('reviewPopup-image');
 const imagePreviewContainer = document.querySelector('.reviewPopup__imagePreview');
 const imagePreview = document.getElementById('imagePreview');
@@ -50,7 +48,6 @@ deleteButton.addEventListener('click', function() {
     imagePreview.src = '';
     imagePreviewContainer.style.display = 'none';
 });
-
 
 const reviewProductAdd = document.querySelector('.reviewProduct__add');
 const reviewPopup = document.querySelector('.reviewPopup');
@@ -82,7 +79,6 @@ const closePopupFast = () => {
     popupFast.classList.remove('active');
 };
 closePopupFastBtn.addEventListener('click', closePopupFast);
-
 document.addEventListener('click', (e) => {
     if (!reviewPopupInner.contains(e.target) && !reviewPopupClose.contains(e.target)) {
         deactivateReviewProduct();
@@ -92,9 +88,9 @@ document.addEventListener('click', (e) => {
     }
 });
 
- const productAboutButtons = document.querySelectorAll('.productAbout__select-btn');
- productAboutButtons.forEach(button => {
-   button.addEventListener('click', () => {
+const productAboutButtons = document.querySelectorAll('.productAbout__select-btn');
+productAboutButtons.forEach(button => {
+    button.addEventListener('click', () => {
         productAboutButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
         const targetId = button.getAttribute('data-productAbout');
@@ -106,5 +102,5 @@ document.addEventListener('click', (e) => {
         if (targetBlock) {
             targetBlock.classList.add('active');
         }
-   });
- });
+    });
+});

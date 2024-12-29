@@ -29,27 +29,6 @@ function moveHeaderBlock() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // let swiper = new Swiper(".swiper", {
-    //     loop: false,
-    //     spaceBetween: 20,
-    //     slidesPerView: 2,
-    //     allowTouchMove: false,
-    //     navigation: {
-    //         nextEl: ".button-next",
-    //         prevEl: ".button-prev",
-    //     },
-    //     breakpoints: {
-    //         775: {
-    //             spaceBetween: 30,
-    //             slidesPerView: 3,
-    //         },
-    //         931: {
-    //             spaceBetween: 30,
-    //             slidesPerView: 4,
-    //         },
-    //     },
-    // });
-
     if (typeof Swiper !== 'undefined' && Swiper !== null) {
         let leadersSwiper = new Swiper(".leaders__slider", {
             loop: false,
@@ -147,13 +126,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 },
             },
         });
-
     }
 });
-
-
 const body = document.querySelector('.body');
-
 const userBtn = document.querySelector('.header__user-btn');
 const endUserBlock = document.querySelector('.header__end-user');
 userBtn.addEventListener('click', function (event) {
@@ -184,7 +159,7 @@ function checkScroll() {
       header.classList.remove('scrolled');
     }
 }
-window.addEventListener('load', checkScroll);
+checkScroll();
 window.addEventListener('resize', checkScroll);
 window.addEventListener('scroll', checkScroll);
 
@@ -194,7 +169,6 @@ headerBurger.addEventListener('click', function() {
     headerBurger.classList.toggle('active');
     headerMenu.classList.toggle('active');
 });
-
 
 const openButtons = document.querySelectorAll('.header__user-open');
 const popup = document.querySelector('.userpopup');
@@ -251,7 +225,6 @@ document.querySelectorAll('.userpopup__btn[type="button"]').forEach(button => {
     });
 });
 
-
 const basketButton = document.getElementById('basket-btn');
 const basket = document.querySelector('.basket');
 const basketInner = document.querySelector('.basket__inner');
@@ -274,19 +247,15 @@ document.addEventListener('click', (event) => {
     }
 });
 
-
 const faqItems = document.querySelectorAll(".faq__item");
 faqItems.forEach((item) => {
-  const itemName = item.querySelector("h3");
-  itemName.addEventListener("click", () => {
-    if (item.classList.contains("active")) {
-      item.classList.remove("active");
-    } else {
-      faqItems.forEach((el) => el.classList.remove("active"));
-      item.classList.add("active");
-    }
-  });
+    const itemName = item.querySelector("h3");
+    itemName.addEventListener("click", () => {
+        if (item.classList.contains("active")) {
+            item.classList.remove("active");
+        } else {
+            faqItems.forEach((el) => el.classList.remove("active"));
+            item.classList.add("active");
+        }
+    });
 });
-  
-
-
