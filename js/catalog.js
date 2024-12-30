@@ -15,9 +15,10 @@ document.querySelectorAll('.catalog__filter-top').forEach(top => {
     });
 });
 
-document.querySelectorAll('.catalog__filter-open, .catalog__filter-close').forEach(btn => {
+document.querySelectorAll('.catalog__filter-open, .catalog__filter-close, .catalog__filter-bg').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelector('.catalog__filter').classList.toggle('active');
+        document.querySelector('.catalog__filter').classList.toggle('active');
+        document.querySelector('.catalog__filter-bg').classList.toggle('active');
       document.querySelector('.body').classList.toggle('no-scroll');
     });
 });

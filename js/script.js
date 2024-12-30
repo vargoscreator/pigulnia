@@ -292,3 +292,23 @@ document.addEventListener('click', (event) => {
         searchForm.classList.remove('active');
     }
 });
+
+
+handleResize()
+window.addEventListener('resize', handleResize);
+
+function handleResize() {
+    const basketbuttons = document.querySelectorAll('.basket__recommendation-btn');
+    
+    basketbuttons.forEach(btn => {
+        const basketcontent = btn.closest('.basket__recommendation-content');
+        const basketslide = btn.closest('.basket__recommendation-slide');
+        if (window.innerWidth < 768) {
+            basketslide.appendChild(btn);
+        } else {
+            if (basketslide && !basketcontent.contains(btn)) {
+                basketcontent.appendChild(btn);
+            }
+        }
+    });
+}
