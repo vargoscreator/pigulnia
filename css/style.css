@@ -1186,11 +1186,19 @@ strong{
 }
 @media (max-width: 767px) {
     .errorPage {
-        padding: 80px 0 80px;
+        padding: 42px 0;
     }   
     .errorPage__image{
         max-width: 200px;
+        font-size: 108px;
+        font-weight: 300;
+        line-height: 18px;
     }
+    .errorPage__image span svg{
+        width: 52px;
+        height: 108px;
+    }
+
 }
 /* errorPage end */
 
@@ -1285,6 +1293,14 @@ strong{
 }
 .userpopup__title{
     text-align: center;
+    display: flex;
+    align-items: end;
+    gap: 4px;
+    justify-content: center;
+}
+.userpopup__title img{
+    max-width: 46px;
+    max-height: 46px;
 }
 .userpopup__form{
     width: 100%;
@@ -1315,7 +1331,7 @@ strong{
 @media (max-width: 767px) {
     .userpopup__inner {
         margin: 25% auto 5%;
-        padding: 32px 25px;
+        padding: 30px 26px;
     }
     .userpopup__close{
         top: 14px;
@@ -1325,11 +1341,18 @@ strong{
         max-width: 12px;
         max-height: 12px;
     }
+    .userpopup__form{
+        margin-top: 16px;
+    }
     .userpopup__btn{
         max-width: 100%;
         font-size: 14px;
         width: 100%;
-        margin-top: 13px;
+        margin-top: 9px;
+    }
+    .userpopup__title img{
+        max-width: 36px;
+        max-height: 36px;
     }
 }
 /* userpopup end */
@@ -1828,7 +1851,7 @@ strong{
         padding: 30px 20px;
     }
     .blockImage-reverse .blockImage__inner{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .blockImage-main .blockImage__content,
     .blockImage-reverse .blockImage__content{
@@ -3623,24 +3646,37 @@ input[type="range"].price-slider::-ms-thumb {
 }
 @media (max-width: 767px) {
     .contacts {
-        padding: 42px 0;
+        padding: 32px 0 42px;
     }
     .contacts__inner{
         border-radius: 12px;
         flex-direction: column;
     }
     .contacts__content {
-        padding: 26px;
-        gap: 10px;
+        padding: 22px;
+        gap: 0;
     }
     .contacts__map{
-        height: 300px;
+        height: 265px;
     }
     .contacts .footer__box-socials{
         margin-top: 12px;
     }
     .contacts__btn{
         margin-top: 12px;
+    }
+    .contacts .footer__block{
+        margin-top: 12px;
+    }
+    .contacts .footer__socials{
+        margin-top: 16px;
+    }
+    .contacts .footer__email, .contacts .footer__adress{
+        margin-top: 16px;
+    }
+    .contacts__btn,
+    .contacts .footer__box-socials {
+        margin-top: 18px;
     }
 }
 
@@ -3936,6 +3972,9 @@ input[type="range"].price-slider::-ms-thumb {
     background: #245435;
     color: #fff;
 }
+.generalBlock__select-btn:active{
+    background: #163521;
+}
 .generalBlock__content{
     width: 100%;
     max-width: 881px;
@@ -3971,17 +4010,37 @@ input[type="range"].price-slider::-ms-thumb {
 }
 @media (max-width: 767px) {
     .generalBlock {
-        padding: 32px 0;
+        padding: 32px 0 42px;
     }
     .generalBlock__inner{
         flex-direction: column;
     }
     .generalBlock__box {
         padding: 30px 20px;
-        gap: 15px;
+        gap: 12px;
     }
     .generalBlock__box-block{
-        gap: 5px;
+        gap: 4px;
+    }
+    .generalBlock__select{
+        max-width: 100%;
+        gap: 4px;
+    }
+    .generalBlock__select-btn{
+        text-align: center;
+        height: 46px;
+    }
+    .generalBlock__content{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .generalBlock__title{
+        order: -1;
+        margin: 0;
+    }
+    .generalBlock__box + .generalBlock__box{
+        margin-top: 0;
     }
 }
 /* infoBlock */
@@ -4041,7 +4100,7 @@ input[type="range"].price-slider::-ms-thumb {
     .infoBlock-reverse .infoBlock__inner,
     .infoBlock__inner{
         flex-direction: column;
-        padding: 20px;
+        padding: 24px 20px;
     }
     .infoBlock-reverse .infoBlock__image,
     .infoBlock__image{
@@ -4050,8 +4109,11 @@ input[type="range"].price-slider::-ms-thumb {
     .infoBlock__content{
         gap: 10px;
     }
+    .infoBlock__content h2{
+        width: 90%;
+    }
     .infoBlock__image{
-        height: 220px;
+        height: 224px;
     }
 }
 /* article */
@@ -5923,7 +5985,7 @@ line-height: 28px;
     }
 }
 .personal{
-    padding: 83px 0 75px;
+    margin: 83px 0 75px;
 }
 .personal__select{
     margin-top: 24px;
@@ -6401,7 +6463,7 @@ line-height: 28px;
 }
 @media (max-width: 999px) {
     .personal {
-        padding: 77px 0 75px;
+        margin: 77px 0 75px;
     }
     .personal__products-block{
         grid-template-columns: 1fr 1fr;
@@ -6432,19 +6494,11 @@ line-height: 28px;
 }
 @media (max-width: 767px) {
     .personal {
-        padding: 47px 0;
+        margin: 32px 0 42px;
     }
     .personal__history-top::after{
         left: 20px;
         right: 20px;
-    }
-    .personal__doctor,
-    .personal__products-block,
-    .personal__data-form,
-    .personal__history-bottom,
-    .personal__content-title,
-    .personal__history-top{
-        padding: 20px;
     }
     .personal__data-btn,
     .personal__history-btn {
@@ -6470,7 +6524,8 @@ line-height: 28px;
         gap: 10px;
     }
     .personal__data-form{
-        gap: 20px;
+        gap: 13px;
+        padding: 12px;
     }
 
     .personal__doctor-top{
@@ -6518,5 +6573,64 @@ line-height: 28px;
         height: 44px;
         max-width: 231px;
         font-size: 14px;
+    }
+    .personal__select{
+        flex-wrap: nowrap;
+        overflow: scroll;
+        margin: 8px -20px 0;
+        padding: 0 20px;
+        gap: 4px;
+    }
+    .personal__select::-webkit-scrollbar {
+        display: none;
+    }
+    .personal__select-btn{
+        text-wrap: nowrap;
+        padding: 6px 12px;
+        height: 36px;
+    }
+    .personal__content-title{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 18px 12px 12px;
+    }
+    .personal__content-title span{
+        width: 14px;
+        height: 14px;
+    }
+    .personal__content-title span svg{
+        width: 100%;
+    }
+    .personal__history-top{
+        padding: 14px 12px 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .personal__history-block{
+        gap: 4px;
+    }
+    .personal__history-btn{
+        max-width: 100%;
+        height: 44px;
+    }
+    .personal__history-bottom{
+        padding: 22px 12px;
+    }
+    .personal__history-top::after{
+        left: 0;
+        right: 0;
+    }
+    .personal__data-btn{
+        max-width: 100%;
+        height: 48px;
+    }
+    .personal__products-block{
+        padding: 12px;
+        gap: 20px 10px;
+    }
+    .product__item-favourite{
+        top: 6px;
+        right: 6px;
     }
 }
