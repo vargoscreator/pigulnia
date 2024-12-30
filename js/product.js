@@ -10,6 +10,7 @@ let productSwiper = new Swiper(".product__slider", {
 
 const ratingInputs = document.querySelectorAll('.reviewPopup__rating input[type="radio"]');
 const ratingLabels = document.querySelectorAll('.reviewPopup__rating label');
+
 function updateStars() {
     ratingInputs.forEach((input, index) => {
         const label = ratingLabels[index];
@@ -21,10 +22,28 @@ function updateStars() {
         }
     });
 }
+
+ratingLabels.forEach((label, index) => {
+    label.addEventListener('mouseenter', () => {
+        ratingInputs.forEach((input, i) => {
+            const svg = label.querySelector('svg path');
+            const labelSvg = ratingLabels[i].querySelector('svg path');
+            if (i <= index) {
+                labelSvg.setAttribute('fill', '#FDC714');
+            } else {
+                labelSvg.setAttribute('fill', 'rgba(31, 31, 31, 0.18)');
+            }
+        });
+    });
+    label.addEventListener('mouseleave', () => {
+        updateStars();
+    });
+});
 ratingInputs.forEach(input => {
     input.addEventListener('change', updateStars);
 });
 updateStars();
+
 
 const imageInput = document.getElementById('reviewPopup-image');
 const imagePreviewContainer = document.querySelector('.reviewPopup__imagePreview');
@@ -89,10 +108,14 @@ document.addEventListener('click', (e) => {
 });
 
 const productAboutButtons = document.querySelectorAll('.productAbout__select-btn');
+
 productAboutButtons.forEach(button => {
-    button.addEventListener('click', () => {
+    button.addEventListener('click', (event) => {
+        if (button.href && button.href.includes('#reviewProduct')) {
+            return;
+        }
         productAboutButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+        button.classList.add('active'); 
         const targetId = button.getAttribute('data-productAbout');
         const contentBlocks = document.querySelectorAll('.productAbout__content');
         contentBlocks.forEach(block => {
@@ -104,3 +127,17 @@ productAboutButtons.forEach(button => {
         }
     });
 });
+
+
+const likeButtons = document.querySelectorAll('.reviewProduct__item-like');
+const dislikeButtons = document.querySelectorAll('.reviewProduct__item-dislike');
+function handleAnimation(button, animationClass) {
+    button.addEventListener('mouseenter', () => {
+        button.classList.add(animationClass); 
+    });
+    button.addEventListener('animationend', () => {
+        button.classList.remove(animationClass);
+    });
+}
+likeButtons.forEach(button => handleAnimation(button, 'like-animation-active'));
+dislikeButtons.forEach(button => handleAnimation(button, 'dislike-animation-active'));
