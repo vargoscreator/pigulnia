@@ -294,21 +294,21 @@ document.addEventListener('click', (event) => {
 });
 
 
-handleResize()
-window.addEventListener('resize', handleResize);
-
 function handleResize() {
-    const basketbuttons = document.querySelectorAll('.basket__recommendation-btn');
-    
-    basketbuttons.forEach(btn => {
-        const basketcontent = btn.closest('.basket__recommendation-content');
-        const basketslide = btn.closest('.basket__recommendation-slide');
+    const basketslides = document.querySelectorAll('.basket__recommendation-slide');
+    basketslides.forEach(basketslide => {
+        const btn = basketslide.querySelector('.basket__recommendation-btn');
+        const basketcontent = basketslide.querySelector('.basket__recommendation-content');
         if (window.innerWidth < 768) {
             basketslide.appendChild(btn);
         } else {
-            if (basketslide && !basketcontent.contains(btn)) {
+            if (!basketcontent.contains(btn)) {
                 basketcontent.appendChild(btn);
             }
         }
     });
 }
+
+window.addEventListener('resize', handleResize);
+handleResize();
+
