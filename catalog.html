@@ -22,7 +22,7 @@
                     <div class="header__catalog-content">
                         <a class="header__catalog-item" href="#">
                             <div class="header__catalog-image">
-                                <img src="img/catalog/1.png" alt="">
+                                <img src="img/hero.png" alt="">
                             </div>
                             <span class="header__catalog-descr">Жіноче <br>здоров'я</span>
                         </a>
@@ -91,19 +91,22 @@
                         +38 (093) 12 33 122
                     </a>
                     <div class="header__end-block">
-                        <button class="header__end-btn" id="serach-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                <g clip-path="url(#clip0_1_4929)">
-                                  <path d="M2.04765 12.1542C2.44355 13.0857 3.01906 13.9302 3.74131 14.6393C4.46357 15.3485 5.31843 15.9084 6.25709 16.2872C7.19575 16.6659 8.19982 16.8561 9.21198 16.8468C10.2241 16.8376 11.2245 16.629 12.1561 16.2331C13.0877 15.8372 13.9321 15.2617 14.6413 14.5395C15.3504 13.8172 15.9104 12.9623 16.2891 12.0237C16.6679 11.085 16.8581 10.0809 16.8488 9.06879C16.8395 8.05663 16.631 7.05621 16.2351 6.12466C15.8392 5.19309 15.2636 4.34863 14.5414 3.63949C13.8191 2.93034 12.9643 2.3704 12.0256 1.99163C11.0869 1.61287 10.0829 1.42269 9.07072 1.43196C8.05857 1.44124 7.05815 1.64978 6.12659 2.04568C5.19503 2.44159 4.35057 3.0171 3.64143 3.73936C2.93228 4.46162 2.37234 5.31648 1.99358 6.25514C1.61481 7.1938 1.42464 8.19787 1.43392 9.21003C1.44319 10.2222 1.65174 11.2226 2.04765 12.1542Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path d="M14.5898 14.5889L20.5677 20.5676" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                  <clipPath id="clip0_1_4929">
-                                    <rect width="22" height="22" fill="white"/>
-                                  </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
+                        <form class="header__search" action="#">
+                            <input type="search" name="search" id="search" required>
+                            <button class="header__end-btn" id="serach-btn" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                    <g clip-path="url(#clip0_1_4929)">
+                                      <path d="M2.04765 12.1542C2.44355 13.0857 3.01906 13.9302 3.74131 14.6393C4.46357 15.3485 5.31843 15.9084 6.25709 16.2872C7.19575 16.6659 8.19982 16.8561 9.21198 16.8468C10.2241 16.8376 11.2245 16.629 12.1561 16.2331C13.0877 15.8372 13.9321 15.2617 14.6413 14.5395C15.3504 13.8172 15.9104 12.9623 16.2891 12.0237C16.6679 11.085 16.8581 10.0809 16.8488 9.06879C16.8395 8.05663 16.631 7.05621 16.2351 6.12466C15.8392 5.19309 15.2636 4.34863 14.5414 3.63949C13.8191 2.93034 12.9643 2.3704 12.0256 1.99163C11.0869 1.61287 10.0829 1.42269 9.07072 1.43196C8.05857 1.44124 7.05815 1.64978 6.12659 2.04568C5.19503 2.44159 4.35057 3.0171 3.64143 3.73936C2.93228 4.46162 2.37234 5.31648 1.99358 6.25514C1.61481 7.1938 1.42464 8.19787 1.43392 9.21003C1.44319 10.2222 1.65174 11.2226 2.04765 12.1542Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      <path d="M14.5898 14.5889L20.5677 20.5676" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                    <defs>
+                                      <clipPath id="clip0_1_4929">
+                                        <rect width="22" height="22" fill="white"/>
+                                      </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </form>
                         
                         <div class="header__end-user">
                             <button class="header__user-btn">
@@ -122,6 +125,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <path d="M19.61 18.8926C19.6331 19.098 19.6123 19.3059 19.5492 19.5029C19.4861 19.6997 19.3821 19.881 19.2439 20.0347C19.1054 20.1882 18.9358 20.3107 18.7466 20.3939C18.5573 20.4772 18.3525 20.5195 18.1457 20.5179H3.85428C3.64748 20.5195 3.4427 20.4772 3.25341 20.3939C3.06413 20.3107 2.89462 20.1882 2.75607 20.0347C2.61789 19.881 2.51383 19.6997 2.45074 19.5029C2.38764 19.3059 2.36694 19.098 2.39 18.8926L3.67857 7.33936H18.3214L19.61 18.8926Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M7.33984 7.33932V5.14289C7.33984 4.17201 7.72552 3.24089 8.41204 2.55437C9.09855 1.86786 10.0297 1.48218 11.0006 1.48218C11.9714 1.48218 12.9026 1.86786 13.5891 2.55437C14.2756 3.24089 14.6613 4.17201 14.6613 5.14289V7.33932" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button class="header__user-close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M17.9035 5.06939C18.172 4.8009 18.172 4.3656 17.9035 4.09712C17.635 3.82863 17.1997 3.82863 16.9312 4.09712L11.0007 10.0277L5.07012 4.09712C4.80163 3.82863 4.36633 3.82863 4.09785 4.09712C3.82936 4.3656 3.82936 4.80091 4.09785 5.06939L10.0284 10.9999L4.09787 16.9305C3.82939 17.1989 3.82939 17.6342 4.09787 17.9027C4.36636 18.1712 4.80166 18.1712 5.07015 17.9027L11.0007 11.9722L16.9312 17.9027C17.1997 18.1712 17.635 18.1712 17.9035 17.9027C18.1719 17.6342 18.1719 17.1989 17.9035 16.9305L11.9729 10.9999L17.9035 5.06939Z" fill="#1F1F1F"/>
                             </svg>
                         </button>
 
@@ -177,11 +185,13 @@
                     <h1 class="catalog__title title-2">Жіноче здоров'я</h1>
                     <div class="catalog__content">
                         <button class="catalog__filter-open">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <path d="M0.75 2.82227H2.17838M11.25 2.82227H6.00008" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="square"></path>
-                                <path d="M0.75 9.07617H6.34751M11.25 9.07617H9.82178" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="square"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.91585 4.56021C4.87524 4.56021 5.65298 3.78246 5.65298 2.82307C5.65298 1.86368 4.87524 1.08594 3.91585 1.08594C2.95645 1.08594 2.17871 1.86368 2.17871 2.82307C2.17871 3.78246 2.95645 4.56021 3.91585 4.56021Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="square"></path>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.08479 10.8141C9.04418 10.8141 9.82193 10.0364 9.82193 9.07698C9.82193 8.11759 9.04418 7.33984 8.08479 7.33984C7.12541 7.33984 6.34766 8.11759 6.34766 9.07698C6.34766 10.0364 7.12541 10.8141 8.08479 10.8141Z" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="square"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 0.6875C1.36091 0.6875 0.4375 1.61091 0.4375 2.75C0.4375 3.88909 1.36091 4.8125 2.5 4.8125C3.63909 4.8125 4.5625 3.88909 4.5625 2.75C4.5625 1.61091 3.63909 0.6875 2.5 0.6875ZM1.5625 2.75C1.5625 2.23223 1.98223 1.8125 2.5 1.8125C3.01777 1.8125 3.4375 2.23223 3.4375 2.75C3.4375 3.26777 3.01777 3.6875 2.5 3.6875C1.98223 3.6875 1.5625 3.26777 1.5625 2.75Z" fill="#1F1F1F"/>
+                                <path d="M7 2.1875C6.68934 2.1875 6.4375 2.43934 6.4375 2.75C6.4375 3.06066 6.68934 3.3125 7 3.3125L13 3.3125C13.3107 3.3125 13.5625 3.06066 13.5625 2.75C13.5625 2.43934 13.3107 2.1875 13 2.1875L7 2.1875Z" fill="#1F1F1F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 5.9375C10.3609 5.9375 9.4375 6.86091 9.4375 8C9.4375 9.13909 10.3609 10.0625 11.5 10.0625C12.6391 10.0625 13.5625 9.13909 13.5625 8C13.5625 6.86091 12.6391 5.9375 11.5 5.9375ZM10.5625 8C10.5625 7.48223 10.9822 7.0625 11.5 7.0625C12.0178 7.0625 12.4375 7.48223 12.4375 8C12.4375 8.51777 12.0178 8.9375 11.5 8.9375C10.9822 8.9375 10.5625 8.51777 10.5625 8Z" fill="#1F1F1F"/>
+                                <path d="M1 7.4375C0.68934 7.4375 0.4375 7.68934 0.4375 8C0.4375 8.31066 0.68934 8.5625 1 8.5625L7 8.5625C7.31066 8.5625 7.5625 8.31066 7.5625 8C7.5625 7.68934 7.31066 7.4375 7 7.4375L1 7.4375Z" fill="#1F1F1F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 11.1875C1.36091 11.1875 0.4375 12.1109 0.4375 13.25C0.4375 14.3891 1.36091 15.3125 2.5 15.3125C3.63909 15.3125 4.5625 14.3891 4.5625 13.25C4.5625 12.1109 3.63909 11.1875 2.5 11.1875ZM1.5625 13.25C1.5625 12.7322 1.98223 12.3125 2.5 12.3125C3.01777 12.3125 3.4375 12.7322 3.4375 13.25C3.4375 13.7678 3.01777 14.1875 2.5 14.1875C1.98223 14.1875 1.5625 13.7678 1.5625 13.25Z" fill="#1F1F1F"/>
+                                <path d="M7 12.6875C6.68934 12.6875 6.4375 12.9393 6.4375 13.25C6.4375 13.5607 6.68934 13.8125 7 13.8125H13C13.3107 13.8125 13.5625 13.5607 13.5625 13.25C13.5625 12.9393 13.3107 12.6875 13 12.6875H7Z" fill="#1F1F1F"/>
                             </svg>
                             Фільтри
                         </button>
@@ -294,8 +304,20 @@
                                 </div>
                             </div>
 
+                            <div class="catalog__filter-btns">
+                                <button class="catalog__filter-submit" type="submit">Застосувати</button>
+                                <button class="catalog__filter-back" type="button">Відмінити</button>
+                            </div>
                         </form>
+                        <div class="catalog__filter-bg"></div>
                         <div class="catalog__result-content">
+                            <form class="catalog__sort" action="#">
+                                <select name="sort" id="sort">
+                                    <option value="Від дешевих до дорогих" selected="">Від дешевих до дорогих</option>
+                                    <option value="Від дорогих до дорогих">Від дорогих до дешевих</option>
+                                    <option value="За популярністью">За популярністью</option>
+                                </select>
+                            </form>
                             <div class="catalog__result">
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -315,6 +337,7 @@
                                         <h3>Комплекс "Старт"</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="900,00">810,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
 
                                 <div class="product__item">
@@ -335,11 +358,12 @@
                                         <h3>Біменталь 280мг №60 капс.</h3>
                                     </a>                                
                                     <p class="product__item-price">320,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
                                         <img src="img/product/3.png" alt="">
-                                        <div class="product__item-about product__item-about--second ">
+                                        <div class="product__item-about ">
                                             <ul>
                                                 <li>зменшення запалень</li>
                                                 <li>ослаблення болю</li>
@@ -354,6 +378,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="0">200,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -373,6 +398,7 @@
                                         <h3>Біменталь Плюс 350 мг </h3>
                                     </a>                                
                                     <p class="product__item-price">430,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
 
                                 <div class="product__item">
@@ -393,11 +419,12 @@
                                         <h3>Біменталь Плюс 350 мг </h3>
                                     </a>                                
                                     <p class="product__item-price">430,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
                                         <img src="img/product/3.png" alt="">
-                                        <div class="product__item-about product__item-about--second ">
+                                        <div class="product__item-about ">
                                             <ul>
                                                 <li>зменшення запалень</li>
                                                 <li>ослаблення болю</li>
@@ -412,6 +439,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="0">200,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -431,6 +459,7 @@
                                         <h3>Біменталь 280мг №60 капс.</h3>
                                     </a>                                
                                     <p class="product__item-price">320,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -450,6 +479,7 @@
                                         <h3>Фармапрост супозиторії №10</h3>
                                     </a>                                
                                     <p class="product__item-price">450,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -469,6 +499,7 @@
                                         <h3>Комплекс "Старт"</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="900,00">810,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
 
                                 <div class="product__item">
@@ -489,11 +520,12 @@
                                         <h3>Біменталь 280мг №60 капс.</h3>
                                     </a>                                
                                     <p class="product__item-price">320,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
                                         <img src="img/product/3.png" alt="">
-                                        <div class="product__item-about product__item-about--second ">
+                                        <div class="product__item-about ">
                                             <ul>
                                                 <li>зменшення запалень</li>
                                                 <li>ослаблення болю</li>
@@ -508,6 +540,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="0">200,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -527,6 +560,7 @@
                                         <h3>Біменталь Плюс 350 мг </h3>
                                     </a>                                
                                     <p class="product__item-price">430,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
 
                                 <div class="product__item">
@@ -547,11 +581,12 @@
                                         <h3>Біменталь Плюс 350 мг </h3>
                                     </a>                                
                                     <p class="product__item-price">430,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
                                         <img src="img/product/3.png" alt="">
-                                        <div class="product__item-about product__item-about--second ">
+                                        <div class="product__item-about ">
                                             <ul>
                                                 <li>зменшення запалень</li>
                                                 <li>ослаблення болю</li>
@@ -566,6 +601,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="0">200,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -585,6 +621,7 @@
                                         <h3>Біменталь 280мг №60 капс.</h3>
                                     </a>                                
                                     <p class="product__item-price">320,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -604,6 +641,7 @@
                                         <h3>Фармапрост супозиторії №10</h3>
                                     </a>                                
                                     <p class="product__item-price">450,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -623,6 +661,7 @@
                                         <h3>Комплекс "Старт"</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="900,00">810,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
 
                                 <div class="product__item">
@@ -643,11 +682,12 @@
                                         <h3>Біменталь 280мг №60 капс.</h3>
                                     </a>                                
                                     <p class="product__item-price">320,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
                                         <img src="img/product/3.png" alt="">
-                                        <div class="product__item-about product__item-about--second ">
+                                        <div class="product__item-about ">
                                             <ul>
                                                 <li>зменшення запалень</li>
                                                 <li>ослаблення болю</li>
@@ -662,6 +702,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                
                                     <p class="product__item-price" data-price-old="0">200,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                                 <div class="product__item">
                                     <a class="product__item-image" href="#">
@@ -681,6 +722,7 @@
                                         <h3>Біменталь Плюс 350 мг </h3>
                                     </a>                                
                                     <p class="product__item-price">430,00 грн.</p>
+                                    <button class="product__item-btn">Додати до кошика</button>
                                 </div>
                             </div>
                             <button class="catalog__result-more link">Завантажити ще</button>
@@ -716,11 +758,12 @@
                                     <h3>Комплекс "Старт"</h3>
                                 </a>                                
                                 <p class="product__item-price" data-price-old="900,00">810,00 грн.</p>
+                                <button class="product__item-btn">Додати до кошика</button>
                             </div>
                             <div class="leaders__slide swiper-slide product__item">
                                 <a class="product__item-image" href="#">
                                     <img src="img/product/2.png" alt="">
-                                    <div class="product__item-about product__item-about--second">
+                                    <div class="product__item-about">
                                         <ul>
                                             <li>зменшення запалень</li>
                                             <li>ослаблення болю</li>
@@ -735,6 +778,7 @@
                                     <h3>Біменталь 280мг №60 капс.</h3>
                                 </a>                                
                                 <p class="product__item-price" data-price-old="0">320,00 грн.</p>
+                                <button class="product__item-btn">Додати до кошика</button>
                             </div>
                             <div class="leaders__slide swiper-slide product__item">
                                 <a class="product__item-image" href="#">
@@ -744,6 +788,7 @@
                                     <h3>Петагма таблетки №30</h3>
                                 </a>                                
                                 <p class="product__item-price">200,00 грн.</p>
+                                <button class="product__item-btn">Додати до кошика</button>
                             </div>
                             <div class="leaders__slide swiper-slide product__item">
                                 <a class="product__item-image" href="#">
@@ -753,6 +798,7 @@
                                     <h3>Біменталь Плюс 350 мг</h3>
                                 </a>                                
                                 <p class="product__item-price">430,00 грн.</p>
+                                <button class="product__item-btn">Додати до кошика</button>
                             </div>
                             <div class="leaders__slide swiper-slide product__item">
                                 <a class="product__item-image" href="#">
@@ -762,6 +808,7 @@
                                     <h3>Біменталь 280мг №60 капс.</h3>
                                 </a>                                
                                 <p class="product__item-price" data-price-old="0">320,00 грн.</p>
+                                <button class="product__item-btn">Додати до кошика</button>
                             </div>
                         </div>
                         <span class="leaders__slider-pagination"></span>
@@ -917,7 +964,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                    
                                     <p class="basket__recommendation-price">200 грн</p>
-                                    <button class="basket__recommendation-btn btn">Купити</button>
+                                    <button class="basket__recommendation-btn btn">Додати до кошика</button>
                                 </div>
                             </div>
                             <div class="basket__recommendation-slide swiper-slide">
@@ -929,7 +976,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                    
                                     <p class="basket__recommendation-price">200 грн</p>
-                                    <button class="basket__recommendation-btn btn">Купити</button>
+                                    <button class="basket__recommendation-btn btn">Додати до кошика</button>
                                 </div>
                             </div>
                             <div class="basket__recommendation-slide swiper-slide">
@@ -941,7 +988,7 @@
                                         <h3>Петагма таблетки №30</h3>
                                     </a>                                    
                                     <p class="basket__recommendation-price">200 грн</p>
-                                    <button class="basket__recommendation-btn btn">Купити</button>
+                                    <button class="basket__recommendation-btn btn">Додати до кошика</button>
                                 </div>
                             </div>
                         </div>

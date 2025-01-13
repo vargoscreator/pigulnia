@@ -142,14 +142,31 @@ document.addEventListener('click', function (event) {
 
 const catalogBtn = document.querySelector('.header__catalog-btn');
 const catalogBlock = document.querySelector('.header__catalog');
-catalogBtn.addEventListener('click', function (event) {
-    catalogBlock.classList.toggle('active');
+catalogBtn.addEventListener('click', function () {
+    if (window.innerWidth < 1000) {
+        catalogBlock.classList.toggle('active');
+    }
 });
 document.addEventListener('click', function (event) {
-    if (!catalogBlock.contains(event.target) && !catalogBtn.contains(event.target)) {
+    if (
+        window.innerWidth < 1000 &&
+        !catalogBlock.contains(event.target) &&
+        !catalogBtn.contains(event.target)
+    ) {
         catalogBlock.classList.remove('active');
     }
 });
+catalogBlock.addEventListener('mouseenter', function () {
+    if (window.innerWidth > 999) {
+        catalogBlock.classList.add('active');
+    }
+});
+catalogBlock.addEventListener('mouseleave', function () {
+    if (window.innerWidth > 999) {
+        catalogBlock.classList.remove('active');
+    }
+});
+
 
 function checkScroll() {
     const header = document.querySelector('header');
@@ -259,3 +276,39 @@ faqItems.forEach((item) => {
         }
     });
 });
+
+const searchBtn = document.getElementById('serach-btn');
+const searchForm = document.querySelector('.header__search');
+const searchInput = document.getElementById('search');
+
+searchBtn.addEventListener('click', (event) => {
+    searchForm.classList.add('active');
+    searchInput.focus();
+    event.stopPropagation();
+});
+
+document.addEventListener('click', (event) => {
+    if (!searchForm.contains(event.target)) {
+        searchForm.classList.remove('active');
+    }
+});
+
+
+function handleResize() {
+    const basketslides = document.querySelectorAll('.basket__recommendation-slide');
+    basketslides.forEach(basketslide => {
+        const btn = basketslide.querySelector('.basket__recommendation-btn');
+        const basketcontent = basketslide.querySelector('.basket__recommendation-content');
+        if (window.innerWidth < 768) {
+            basketslide.appendChild(btn);
+        } else {
+            if (!basketcontent.contains(btn)) {
+                basketcontent.appendChild(btn);
+            }
+        }
+    });
+}
+
+window.addEventListener('resize', handleResize);
+handleResize();
+
