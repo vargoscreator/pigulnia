@@ -72,11 +72,19 @@
                         <li>
                             <a href="partners.html">Партнери</a>
                         </li>
-                        <li>
-                            <a href="blog.html">Блог</a>
+                        <li class="header__menu-block">
+                            <div class="header__menu-top">
+                                <a href="blog.html">Блог</a>
+                                <span></span>
+                            </div>                            
+                            <div class="header__menu-content">
+                                <a href="#">Статі</a>
+                                <a href="#">Новини</a>
+                                <a href="#">Поширені питання</a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#">Консультація фахівця</a>
+                            <a href="consultation.html">Консультація фахівця</a>
                         </li>
                         <li>
                             <a href="#">Споживачу</a>
@@ -117,7 +125,6 @@
                             </button>
                             <div class="header__user-content">
                                 <button class="header__user-open" id="login-client"><span></span>Вхід для клієнтів</button>
-                                <button class="header__user-open" id="login-doctor"><span></span>Вхід для лікарів</button>
                             </div>
                         </div>
                         
@@ -151,37 +158,102 @@
 
     <main class="main">
         <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                    <p class="hero__name">
-                        <span class="hero__name-icon">
-                            <img src="img/fire.gif" alt="">
-                        </span>
-                        Довіра провідних фахівців України
-                    </p>
-                    <h1 class="hero__title">Пігульня №1</h1>
-                    <p class="hero__descr">Перша українська пігульня, рекомендована провідними фахівцями, асортимент засобів від українського виробника з якісної сировини з Європи та США</p>
-                    <a class="hero__btn btn" href="#">
-                        До каталогу
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <div class="hero__slider">
-                        <div class="swiper-wrapper">
-                            <div class="hero__slide swiper-slide">
-                                <img src="img/hero.png" alt="">
+            <div class="hero__slider">
+                <div class="swiper-wrapper">
+                    <div class="hero__slide swiper-slide">
+                        <div class="container">
+                            <div class="hero__slide-image">
+                                <img src="img/main-page/hero.png" alt="">
                             </div>
-                            <div class="hero__slide swiper-slide">
-                                <img src="img/hero.png" alt="">
-                            </div>
-                            <div class="hero__slide swiper-slide">
-                                <img src="img/hero.png" alt="">
-                            </div>
+                            <div class="hero__slide-content">
+                                <p class="hero__name">
+                                    <span class="hero__name-icon">
+                                        <img src="img/fire.gif" alt="">
+                                    </span>
+                                    Довіра провідних фахівців України
+                                </p>
+                                <h1 class="hero__title">Пігульня №1</h1>
+                                <p class="hero__descr">Перша українська пігульня, рекомендована провідними фахівцями, асортимент засобів від українського виробника з якісної сировини з Європи та США</p>
+                                <a class="hero__btn btn" href="catalog.html">
+                                    До каталогу
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                           </div>
                         </div>
-                        <span class="hero__slider-pagination"></span>
+                    </div>
+                    <div class="hero__slide swiper-slide">
+                        <div class="container">
+                            <div class="hero__slide-image">
+                                <img src="img/main-page/hero-2.png" alt="">
+                            </div>
+                            <div class="hero__slide-content">
+                                <p class="hero__name">
+                                    <span class="hero__name-icon">
+                                        <img src="img/fire.gif" alt="">
+                                    </span>
+                                    Довіра провідних фахівців України
+                                </p>
+                                <h2 class="hero__title">Пігульня №1</h2>
+                                <p class="hero__descr">Перша українська пігульня, рекомендована провідними фахівцями, асортимент засобів від українського виробника з якісної сировини з Європи та США</p>
+                                <a class="hero__btn btn" href="catalog.html">
+                                    До каталогу
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="hero__slide swiper-slide hero__slide-second">
+                        <div class="container">
+                            <div class="hero__slide-image">
+                                <img src="img/main-page/hero-3.png" alt="">
+                            </div>
+                            <div class="hero__slide-content">
+                                <p class="hero__name">
+                                    <span class="hero__name-icon">
+                                        <img src="img/fire.gif" alt="">
+                                    </span>
+                                    Довіра провідних фахівців України
+                                </p>
+                                <h2 class="hero__title">Ефективні комбінації!</h2>
+                                <p class="hero__descr">В розділі комплекси підібрані комбінації, які приймають разом! </p>
+                                <a class="hero__btn btn" href="catalog.html">
+                                    До каталогу
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="hero__slide swiper-slide hero__slide-second">
+                        <div class="container">
+                            <div class="hero__slide-image">
+                                <img src="img/main-page/hero-4.png" alt="">
+                            </div>
+                            <div class="hero__slide-content">
+                                <p class="hero__name">
+                                    <span class="hero__name-icon">
+                                        <img src="img/fire.gif" alt="">
+                                    </span>
+                                    Довіра провідних фахівців України
+                                </p>
+                                <h2 class="hero__title">-5% на все <span>для зареєстрованих клієнтів </span></h2>
+                                <p class="hero__descr">Реєструйся на сайті Пігульні та користуйся вигідною пропозицією</p>
+                                <a class="hero__btn btn" href="catalog.html">
+                                    До каталогу
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4 12L12 4M12 4H5.5M12 4V10.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                           </div>
+                        </div>
                     </div>
                 </div>
+                <span class="hero__slider-pagination"></span>
             </div>
         </section>
 

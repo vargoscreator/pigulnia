@@ -312,3 +312,14 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 handleResize();
 
+
+document.querySelectorAll('.header__menu-block').forEach(block => {
+    const span = block.querySelector('span');
+    if (span) {
+        span.addEventListener('click', () => {
+            if (window.innerWidth < 1000) { 
+                block.classList.toggle('active');
+            }
+        });
+    }
+});
