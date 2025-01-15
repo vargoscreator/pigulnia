@@ -1929,6 +1929,7 @@ strong{
     width: 100%;
     max-width: 263px;
     margin-top: 24px;
+    gap: 8px;
 }
 .blockImage-reverse .blockImage__inner{
     flex-direction: row-reverse;
