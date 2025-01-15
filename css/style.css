@@ -122,7 +122,7 @@ button{
 .body.no-scroll{
     overflow: hidden;
 }
-input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
+input:not(.product__block-amount):not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
     color: #1F1F1F;
     font-family: 'Onest', sans-serif;
     font-size: 16px;
@@ -5408,6 +5408,13 @@ line-height: 28px;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+}
+.product__block-amount{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: "Onest", sans-serif;
 }
 .product__block-btn{
     width: 100%;
