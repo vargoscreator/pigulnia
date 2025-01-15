@@ -624,6 +624,8 @@ strong{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    position: relative;
+    z-index: 20;
 }
 .header__menu-content{
     position: absolute;
@@ -648,9 +650,10 @@ strong{
     background-position: left;
     background-repeat: no-repeat;
     width: 84px;
-    height: 27px;
-    top: -18px;
-    left: 7px;
+    height: 67px;
+    top: -38px;
+    left: 6px;
+    z-index: -1;
 }
 .header__menu-top .header__menu-link{
     display: flex;
