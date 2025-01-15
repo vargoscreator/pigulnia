@@ -2347,7 +2347,7 @@ strong{
     gap: 12px;
     flex-wrap: wrap;
 }
-.blogBlock__select a{
+.blogBlock__select-link{
     position: relative;
     z-index: 1;
     padding: 10px 14px;
@@ -2356,22 +2356,22 @@ strong{
     line-height: normal;
     height: 38px;
 }
-.blogBlock__select a.active,
-.blogBlock__select a:hover{
+.blogBlock__select-link.active,
+.blogBlock__select-link:hover{
     background-color: #BB974D;
     color: #FFF;
     transition: all .1s ease;
 }
-.blogBlock__select a:active{
+.blogBlock__select-link:active{
     background: #856a36;
 }
-.blogBlock__select a.active::after,
-.blogBlock__select a.active::before,
-.blogBlock__select a:hover::after,
-.blogBlock__select a:hover::before{
+.blogBlock__select-link.active::after,
+.blogBlock__select-link.active::before,
+.blogBlock__select-link:hover::after,
+.blogBlock__select-link:hover::before{
     content: none;
 }
-.blogBlock__select a::before{
+.blogBlock__select-link::before{
     content: '';
     position: absolute;
     inset: 0;
@@ -2379,7 +2379,7 @@ strong{
     z-index: -2;
     border-radius: 5px;
 }
-.blogBlock__select a::after{
+.blogBlock__select-link::after{
     content: '';
     position: absolute;
     z-index: -1;
