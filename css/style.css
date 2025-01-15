@@ -653,7 +653,6 @@ strong{
     height: 67px;
     top: -38px;
     left: 6px;
-    z-index: -1;
 }
 .header__menu-top .header__menu-link{
     display: flex;
