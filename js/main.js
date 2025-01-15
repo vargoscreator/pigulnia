@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
             el: ".hero__slider-pagination",
             clickable: true
         },
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false, 
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false, 
+        },
     });
     
 });
