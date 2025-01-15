@@ -607,11 +607,12 @@ strong{
 .header__menu ul li::before{
     content: none;
 }
-.header__menu ul li a{
+.header__menu-link{
     display: inline-block;
     transition: all .2s ease;
+    font-size: 16px;
 }
-.header__menu ul li a:hover{
+.header__menu-link:hover{
     color: #245435;
 }
 .header__menu ul li.header__menu-block{
@@ -651,7 +652,12 @@ strong{
     top: -18px;
     left: 7px;
 }
-.header__menu-top span{
+.header__menu-top .header__menu-link{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header__menu-top .header__menu-link::after{
     content: '';
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M9.84883 4.88901C10.0517 4.68436 10.0502 4.35401 9.84554 4.15117C9.64088 3.94833 9.31053 3.9498 9.10769 4.15446L7.89217 5.38088C7.39886 5.87861 7.05936 6.22004 6.77168 6.45107C6.49224 6.67548 6.31275 6.75247 6.152 6.77296C6.05107 6.78583 5.94893 6.78583 5.848 6.77296C5.68725 6.75247 5.50776 6.67548 5.22832 6.45107C4.94065 6.22004 4.60114 5.87861 4.10783 5.38088L2.89231 4.15446C2.68947 3.94981 2.35912 3.94833 2.15446 4.15117C1.9498 4.35401 1.94833 4.68436 2.15117 4.88902L3.38859 6.13752C3.85464 6.60776 4.23554 6.9921 4.57493 7.26466C4.92785 7.54809 5.28607 7.75326 5.71606 7.80806C5.9046 7.8321 6.0954 7.8321 6.28394 7.80806C6.71393 7.75326 7.07215 7.54809 7.42507 7.26466C7.76446 6.9921 8.14536 6.60777 8.61141 6.13753L9.84883 4.88901Z' fill='%231F1F1F'/%3E%3C/svg%3E");
     width: 12px;
@@ -661,15 +667,6 @@ strong{
     display: flex;
     align-items: center;
     position: relative;
-}
-.header__menu-top span::after{
-    content: '';
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .header__end{
@@ -840,7 +837,7 @@ strong{
     .header__end-block{
         gap: 10px;
     }
-    .header__menu ul li a{
+    .header__menu-link{
         font-size: 14px;
     }
     .header__catalog-item{
@@ -862,7 +859,7 @@ strong{
     .header__menu-block:hover .header__menu-content{
         display: flex;
     }
-    .header__menu-block:hover .header__menu-top span{
+    .header__menu-block:hover .header__menu-top .header__menu-link::after{
         transform: rotate(-180deg);
     }
 }
@@ -919,7 +916,7 @@ strong{
         flex-direction: column;
         gap: 28px;
     }
-    .header__menu ul li a {
+    .header__menu-link {
         font-size: 16px;
     }
     .header__catalog{
@@ -966,7 +963,7 @@ strong{
     .header__menu-content::before{
         content: none;
     }
-    .header__menu-block.active .header__menu-top span{
+    .header__menu-block.active .header__menu-top .header__menu-link::after{
         transform: rotate(-180deg);
     }
 }

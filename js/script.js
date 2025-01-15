@@ -314,7 +314,7 @@ handleResize();
 
 
 document.querySelectorAll('.header__menu-block').forEach(block => {
-    const span = block.querySelector('span');
+    const span = block.querySelector('.header__menu-top .header__menu-link');
     if (span) {
         span.addEventListener('click', () => {
             if (window.innerWidth < 1000) { 
