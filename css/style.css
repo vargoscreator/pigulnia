@@ -122,7 +122,7 @@ button{
 .body.no-scroll{
     overflow: hidden;
 }
-input:not(.product__block-amount):not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
+input:not(.basket__product-amount):not(.product__block-amount):not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
     color: #1F1F1F;
     font-family: 'Onest', sans-serif;
     font-size: 16px;
@@ -400,12 +400,12 @@ strong{
         background-size: 100%;
     }
     textarea,
-    input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
+    input:not(.basket__product-amount):not(.product__block-amount):not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
         font-size: 12px;
         line-height: 16px;
         padding: 15px;
     }
-    textarea, input:not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
+    textarea, input:not(.basket__product-amount):not(.product__block-amount):not([type="checkbox"]):not([type="range"]):not([type="radio"]):not([type="file"]){
         height: 46px;
     }
     input[type="radio"] + span,
@@ -2963,6 +2963,13 @@ strong{
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
+}
+.basket__product-amount{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: "Onest", sans-serif;
 }
 .basket__recommendation-top{
     margin-top: 50px;
