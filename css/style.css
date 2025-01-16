@@ -2255,12 +2255,18 @@ strong{
 .videoblogs__link:hover span{
     color: #245435;
 }
+.videoblogs__slider-content{
+    width: 100%;
+}
 .videoblogs__slider{
     width: 100%;
     max-width: 294px;
     position: relative;
     z-index: 1;
     user-select: none;
+}
+.videoblogs__slider-pagination{
+    margin-top: 25px;
 }
 .videoblogs__slide-image{
     display: flex;

@@ -88,6 +88,10 @@ document.addEventListener("DOMContentLoaded", function () {
             spaceBetween: 10,
             slidesPerView: 1,
             allowTouchMove: true,
+            pagination: {
+                el: ".videoblogs__slider-pagination",
+                clickable: true
+            },
             breakpoints: {
                 768: {
                     spaceBetween: 15,
