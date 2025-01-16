@@ -277,22 +277,33 @@ faqItems.forEach((item) => {
     });
 });
 
-const searchBtn = document.getElementById('serach-btn');
 const searchForm = document.querySelector('.header__search');
 const searchInput = document.getElementById('search');
-
-searchBtn.addEventListener('click', (event) => {
-    searchForm.classList.add('active');
-    searchInput.focus();
-    event.stopPropagation();
-});
-
 document.addEventListener('click', (event) => {
-    if (!searchForm.contains(event.target)) {
+    const searchBtn = document.querySelector('.search-btn');
+    if (searchBtn && event.target.closest('.search-btn')) {
+        if (searchBtn.tagName.toLowerCase() === 'span') {
+            const buttonElement = document.createElement('button');
+            buttonElement.className = searchBtn.className;
+            buttonElement.id = searchBtn.id;
+            buttonElement.innerHTML = searchBtn.innerHTML;
+            searchBtn.replaceWith(buttonElement);
+        }
+        searchForm.classList.add('active');
+        searchInput.focus();
+        event.stopPropagation();
+    } else if (!searchForm.contains(event.target)) {
         searchForm.classList.remove('active');
+        const currentButton = document.querySelector('.search-btn');
+        if (currentButton && currentButton.tagName.toLowerCase() === 'button') {
+            const spanElement = document.createElement('span');
+            spanElement.className = currentButton.className;
+            spanElement.id = currentButton.id;
+            spanElement.innerHTML = currentButton.innerHTML;
+            currentButton.replaceWith(spanElement);
+        }
     }
 });
-
 
 function handleResize() {
     const basketslides = document.querySelectorAll('.basket__recommendation-slide');

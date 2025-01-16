@@ -693,6 +693,12 @@ strong{
 .header__end-tel svg{
     min-width: 18px;
 }
+.header__end-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header__user-btn svg path,
 .header__end-btn svg path,
 .header__end-tel svg path{
