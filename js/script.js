@@ -323,7 +323,6 @@ function handleResize() {
 window.addEventListener('resize', handleResize);
 handleResize();
 
-
 document.querySelectorAll('.header__menu-block').forEach(block => {
     const span = block.querySelector('.header__menu-top .header__menu-link');
     if (span) {
@@ -333,4 +332,8 @@ document.querySelectorAll('.header__menu-block').forEach(block => {
             }
         });
     }
+});
+
+document.querySelector('.fixedBtns__tel').addEventListener('click', function() {
+    this.closest('.fixedBtns__block').classList.toggle('active');
 });
