@@ -1893,6 +1893,9 @@ strong{
     object-fit: cover;
     object-position: center;
 }
+.blockImage__image.blockImage__image-center img{
+    object-position: center;
+}
 .blockImage__name{
     padding: 8px 12px;
     border-radius: 30px;
@@ -1958,10 +1961,22 @@ strong{
     .blockImage__content{
         padding: 40px 60px;
     }
+    .blockImage__image img{
+        object-position: left;
+    }
 }
 @media (max-width: 999px) {
     .blockImage__inner{
         min-height: auto;
+    }
+    .blockImage-reverse .blockImage__content{
+        max-width: 100%;
+    }
+    .blockImage-reverse .blockImage__image{
+        max-width: 100%;
+    }
+    .blockImage-reverse .blockImage__inner{
+        flex-direction: column-reverse;
     }
     .blockImage-main .blockImage__inner{
         flex-direction: column-reverse;
@@ -1998,6 +2013,9 @@ strong{
     .blockImage-reverse .blockImage__inner{
         flex-direction: column;
     }
+    .blockImage-reverse.blockImage-main .blockImage__inner{
+        flex-direction: column-reverse;
+    }
     .blockImage-main .blockImage__content,
     .blockImage-reverse .blockImage__content{
         max-width: 100%;
@@ -2024,6 +2042,9 @@ strong{
     }
     .blockImage__link{
         margin-top: 12px;
+    }
+    .blockImage__image img{
+        background-position: top;
     }
 }
 @media (max-width: 479px) {
@@ -2086,14 +2107,15 @@ strong{
 .reviews__slide-image{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 145px;
     height: 113px;
     overflow: hidden;
     border-radius: 8px;
 }
 .reviews__slide-image img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     object-position: center;
 }
