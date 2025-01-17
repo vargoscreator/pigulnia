@@ -2278,7 +2278,7 @@ strong{
     border-radius: 8px;
     overflow: hidden;
 }
-.videoblogs__slide-image img{
+.videoblogs__slide-image > *{
     width: 100%;
     height: 100%;
     object-fit: cover;
