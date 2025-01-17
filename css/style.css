@@ -489,7 +489,7 @@ strong{
     background: #F0F0F0;
     border: 1px solid rgba(31, 31, 31, 0.10);
     border-radius: 8px;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 .header__catalog-content::before{
     position: absolute;
@@ -553,7 +553,7 @@ strong{
     max-height: 100%;
 }
 .header__catalog-descr{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     display: flex;
@@ -852,9 +852,12 @@ strong{
     .header__catalog-item{
         padding: 20px 5px 18px;
     }
-
+    .header__catalog-content{
+        gap: 10px;
+    }
     .header__catalog-descr{
-        font-size: 12px;
+        font-size: 11px;
+        line-height: normal;
         min-width: auto;
     }
     .header__user-content::before{
