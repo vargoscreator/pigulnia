@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     
         let videoblogsSwiper = new Swiper(".videoblogs__slider", {
-            loop: false,
+            loop: true,
             spaceBetween: 10,
             slidesPerView: 1,
             allowTouchMove: true,
