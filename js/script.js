@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let videoblogsSwiper = new Swiper(".videoblogs__slider", {
             loop: true,
             spaceBetween: 10,
+            loopAdditionalSlides: 2,
             slidesPerView: 1,
             allowTouchMove: true,
             pagination: {
@@ -95,12 +96,15 @@ document.addEventListener("DOMContentLoaded", function () {
             breakpoints: {
                 768: {
                     spaceBetween: 15,
+                    slidesPerView: 1,
                 },
                 1000: {
                     spaceBetween: 20,
+                    slidesPerView: 2,
                 },
                 1280: {
                     spaceBetween: 29,
+                    slidesPerView: 2,
                 },
             },
         });

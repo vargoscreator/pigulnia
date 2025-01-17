@@ -2263,7 +2263,7 @@ strong{
 }
 .videoblogs__slider{
     width: 100%;
-    max-width: 294px;
+    max-width: 598px;
     position: relative;
     z-index: 1;
     user-select: none;
@@ -2332,6 +2332,9 @@ strong{
 @media (max-width: 999px) {
     .videoblogs__content{
         max-width: 310px;
+    }
+    .videoblogs__slider{
+        max-width: 294px;
     }
 }
 @media (max-width: 767px) {
