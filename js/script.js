@@ -289,8 +289,10 @@ const searchForm = document.querySelector('.header__search');
 const searchInput = document.getElementById('search');
 document.addEventListener('click', (event) => {
     const searchBtn = document.querySelector('.search-btn');
+    const closeBtn = document.querySelector('.header__end-btn--close');
+
     if (searchBtn && event.target.closest('.search-btn')) {
-        if (searchBtn.tagName.toLowerCase() === 'span') {
+        if (searchBtn.tagName.toLowerCase() === 'span') {   
             const buttonElement = document.createElement('button');
             buttonElement.className = searchBtn.className;
             buttonElement.id = searchBtn.id;
@@ -300,7 +302,7 @@ document.addEventListener('click', (event) => {
         searchForm.classList.add('active');
         searchInput.focus();
         event.stopPropagation();
-    } else if (!searchForm.contains(event.target)) {
+    } else if (!searchForm.contains(event.target) || (closeBtn && event.target.closest('.header__end-btn--close'))) {
         searchForm.classList.remove('active');
         const currentButton = document.querySelector('.search-btn');
         if (currentButton && currentButton.tagName.toLowerCase() === 'button') {
@@ -312,6 +314,7 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
 
 function handleResize() {
     const basketslides = document.querySelectorAll('.basket__recommendation-slide');
