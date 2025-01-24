@@ -144,6 +144,9 @@ main.main{
     margin-top: 94px;
     overflow: hidden;
 }
+.main.main-visible{
+    overflow: visible;
+}
 .container{
     width: 100%;
     max-width: 1270px;
@@ -5141,6 +5144,9 @@ input[type="range"].price-slider::-ms-thumb {
 .order__right{
     width: 100%;
     max-width: 420px;
+    position: sticky;
+    top: 120px;
+    height: max-content;
 }
 .order__right-title{
     margin-bottom: 17px
@@ -5344,6 +5350,7 @@ line-height: 28px;
 /* product-page */
 .product{
     background-color: #fff;
+    position: relative;
 }
 .product__inner{
     display: flex;
@@ -5351,21 +5358,23 @@ line-height: 28px;
     justify-content: space-between;
 }
 .product__slider-content {
-    width: 100%;
-    padding: 77px 44px;
-    max-width: max-content;
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 49%;
 }
 .product__slider{
     width: 100%;
     overflow: hidden;
-    max-width: 444px;
+    height: 100%;
 }
 .product__slide{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .product__slide img{
     width: auto;
@@ -5373,6 +5382,10 @@ line-height: 28px;
     max-height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.product__slide-full img{
+    max-height: none;
+    width: 100%;
 }
 .product__slider-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
     position: absolute;
@@ -5385,7 +5398,11 @@ line-height: 28px;
     border-left: 1px solid rgba(31, 31, 31, 0.10);
     padding: 77px 0 77px 69px;
     width: 100%;
-    max-width: 632px;
+    max-width: 51.613%;
+    margin-left: auto;
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
 }
 .product__about{
     margin-top: 19px;
@@ -5614,9 +5631,6 @@ line-height: 28px;
     max-width: 237px;
 }
 @media (max-width: 1279px) {
-    .product__slider-content {
-        padding: 77px 20px;
-    }
     .product__slider {
         max-width: 350px;
     }
@@ -5663,9 +5677,6 @@ line-height: 28px;
     }
     .product__inner{
         flex-direction: column;
-    }
-    .product__slider-content{
-        padding: 0;
     }
     .product__slider-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
         bottom: -10px;
