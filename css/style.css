@@ -5676,6 +5676,9 @@ line-height: 28px;
     .product__inner{
         flex-direction: column;
     }
+    .product__slide{
+        max-height: 273px;
+    }
     .product__slider-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
         bottom: 20px;
     }
