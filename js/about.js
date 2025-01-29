@@ -13,21 +13,14 @@ certificatesSwiper = new Swiper('.certificates__slider', {
     },
 });
 
-// Функция для обновления класса active
 function updateActiveDownloadLink() {
     if(certificatesSwiper){
-        const activeIndex = certificatesSwiper.realIndex; // Получаем индекс текущего слайда
+        const activeIndex = certificatesSwiper.realIndex;
         const downloadLinks = document.querySelectorAll('.certificates__slide-download');
-    
-        // Убираем класс active у всех ссылок
         downloadLinks.forEach(link => link.classList.remove('active'));
-    
-        // Добавляем класс active к соответствующей ссылке
         if (downloadLinks[activeIndex]) {
             downloadLinks[activeIndex].classList.add('active');
         }
     }
 }
-
-// Первоначальное обновление
 updateActiveDownloadLink();
