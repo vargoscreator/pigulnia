@@ -1875,6 +1875,9 @@ strong{
     margin-top: 28px;
     overflow: hidden;
 }
+.leaders__slide .swiper-slide{
+    height: auto;
+}
 .leaders__slider .swiper-wrapper{
     align-items: stretch;
 }
