@@ -2209,8 +2209,15 @@ strong{
     margin-top: 33px;
 }
 @media (max-width: 999px) {
-    .reviews__slide{
+    .reviews__slider .swiper-wrapper{
+        align-items: stretch;
+    }
+    .reviews__slide.swiper-slide{
+        height: auto;
         flex-direction: column;
+    }
+    .reviews__slide-content{
+        flex: 1;
     }
     .reviews__slide-product{
         max-width: 100%;
